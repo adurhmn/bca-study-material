@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    //footer position should depend on body & not html(viewport). so relative positioning is specified in bodu. 
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    border: none;
+    height: 0;
+    border-top: 1px dashed rgba($color: black, $alpha: .5);
+    width: 80%;
+    margin: 4rem auto;
+}
+
+::selection {
+    background-color: rgb(30, 180, 30);
+    color: white;
+}

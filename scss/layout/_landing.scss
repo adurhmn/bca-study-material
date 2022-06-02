@@ -1,0 +1,71 @@
+@use '../abstract/variable' as *;
+
+.landing {
+    &__heading {
+        padding: 1.5rem 0;
+        margin-bottom: 5rem;
+    }
+
+    &__card-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    &__card {
+        padding: 2rem 3rem;
+        border: 1px solid black;
+        width: 90%;
+        max-width: 70rem;
+
+        &-content-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        &-content {
+            &--link {
+                color: white;
+                padding: 1rem 2rem;
+                background-color: black;
+            }
+        }
+        
+    }
+
+    &__footer {
+        font-size: $font-size-3;
+        color: white;
+        background-color: black;
+        padding: 1.5rem 0;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        &-link {
+            &:hover, &:active {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.se:target ~ .landing,
+.dbms:target ~ .landing,
+.vp:target ~ .landing,
+.rmt:target ~ .landing {
+    display: none;
+}
+
+.se:target, .dbms:target, .vp:target, .rmt:target {
+    display: initial;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+
+}

@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  height: 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 4rem auto;
+}
+
+::selection {
+  background-color: #1eb41e;
+  color: white;
+}
+
+html {
+  font-size: 68%;
+}
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.heading--primary {
+  font-size: 2rem;
+  text-align: center;
+}
+.heading--secondary {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.heading--tertiary {
+  font-size: 1.8rem;
+}
+.heading--white {
+  color: white;
+  background-color: black;
+}
+.heading--black {
+  color: black;
+  background-color: white;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.display-initial {
+  display: initial !important;
+}
+
+.nav__goto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__goto-input {
+  width: 16rem;
+  height: 3rem;
+  border: 0.3rem solid black;
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 0 0.5rem;
+}
+.nav__goto-btn {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border: solid black;
+  border-width: 0.3rem 0.3rem 0.3rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.nav__goto-btn img {
+  height: 1.6rem;
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+.nav__top {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: black;
+  z-index: 100;
+}
+.nav__top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%) rotate(-45deg);
+  width: 0.7rem;
+  height: 0.7rem;
+  border: solid white;
+  border-width: 2px 2px 0 0;
+  z-index: 120;
+}
+
+.landing__heading {
+  padding: 1.5rem 0;
+  margin-bottom: 5rem;
+}
+.landing__card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.landing__card {
+  padding: 2rem 3rem;
+  border: 1px solid black;
+  width: 90%;
+  max-width: 70rem;
+}
+.landing__card-content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.landing__card-content--link {
+  color: white;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+.landing__footer {
+  font-size: 1.1rem;
+  color: white;
+  background-color: black;
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.landing__footer-link:hover,
+.landing__footer-link:active {
+  text-decoration: underline;
+}
+
+/* .se:target ~ .landing,
+.dbms:target ~ .landing,
+.vp:target ~ .landing,
+.rmt:target ~ .landing {
+  display: none;
+} */
+
+.subject:target ~ .landing {
+  display: none;
+}
+
+.subject:target {
+  display: initial;
+}
+
+/* .se:target, .dbms:target, .vp:target, .rmt:target {
+  display: initial;
+} */
+
+.subject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  height: 100vh;
+  display: none;
+}
+.subject__heading--primary {
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
+}
+.subject__heading--secondary {
+  border: solid black;
+  border-width: 2px 0;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.subject__answer-box {
+  padding: 0 1rem;
+  margin-top: 3rem;
+}
+.subject__question {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.subject__sub-heading {
+  display: flex;
+  gap: 0.5rem;
+}
+.subject__mark-flag {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.subject__answer {
+  max-width: 70rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.subject__answer-content {
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem 0 1rem 1rem;
+}
+.subject__answer-content > *,
+.subject__answer-content li > * {
+  margin-bottom: 1.3rem;
+}
+.subject__answer-content ol,
+.subject__answer-content ul {
+  margin-left: 3.5rem;
+  position: relative;
+}
+.subject__answer-content ol::before,
+.subject__answer-content ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3.5rem;
+  height: 100%;
+  border-left: 1px dashed rgba(0, 0, 0, 0.5);
+}
+.subject__answer-content ol ol,
+.subject__answer-content ol ul,
+.subject__answer-content ul ol,
+.subject__answer-content ul ul {
+  margin-left: 2rem;
+}
+.subject__answer-content ol ol::before,
+.subject__answer-content ol ul::before,
+.subject__answer-content ul ol::before,
+.subject__answer-content ul ul::before {
+  left: -3.5rem;
+}
+.subject__answer-content img {
+  display: block;
+  width: 70%;
+  margin: 1.3rem auto 2.6rem auto;
+}
+
+/*# sourceMappingURL=style.css.map */

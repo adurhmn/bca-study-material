@@ -1,0 +1,42 @@
+@use '../abstract/variable' as *;
+
+html {
+    // font-size: 62.5%;
+    font-size: 68%;
+
+    @media only screen and (min-width: 1600px) {
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+.heading {
+
+    &--primary {
+        font-size: $font-size-1;
+        text-align: center;
+    }
+
+    &--secondary {
+        font-size: $font-size-2;
+        text-align: center;
+    }
+
+    &--tertiary {
+        font-size: $font-size-2;
+    }
+
+    &--white {
+        color: white;
+        background-color: black;
+    }
+
+    &--black {
+        color: black;
+        background-color: white;
+    }
+}

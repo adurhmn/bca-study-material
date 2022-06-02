@@ -1,0 +1,2296 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCA CheatSheet</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="subject" id="SAZ6C">
+      <h1 class="heading--primary heading--white subject__heading--primary">
+        Software Testing
+      </h1>
+
+      <div class="nav__goto">
+        <input
+          class="nav__goto-input"
+          type="number"
+          placeholder="Question number..."
+          min="1"
+        />
+        <a class="nav__goto-btn"><img src="./assets/img/search-icon.png" /></a>
+      </div>
+
+      <div class="nav__top">&nbsp;</div>
+
+      <div class="subject__answer-box">
+        <h2 class="heading--secondary subject__heading--secondary">
+          10Marks & 5Marks
+        </h2>
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">1.</span>
+            <span class="subject__question-text"
+              >Testing vs Debugging&nbsp;<span class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <h4>Testing</h4>
+            <ol>
+              <li>
+                Testing is the process using which we find errors and bugs.
+              </li>
+              <li>
+                Testing starts with known conditions, uses predefined procedures
+                and has predictable outcomes.
+              </li>
+              <li>
+                Testing can, and should be planned, designed and scheduled
+              </li>
+              <li>
+                One does not need any design knowledge to perform testing.
+              </li>
+              <li>Both insiders and outsiders can perform testing.</li>
+              <li>Much of test execution and design can be automated</li>
+              <li>
+                Testing is a stage of SDLC (Software Development Life Cycle).
+              </li>
+              <li>
+                This process can begin after we have completed writing the code.
+              </li>
+            </ol>
+            <h4>Debugging</h4>
+            <ol>
+              <li>
+                Debugging is the process using which we correct the bugs that we
+                found during the testing process.
+              </li>
+              <li>
+                Debugging starts from possibly unknown initial conditions and
+                the end cannot be predicted except statistically
+              </li>
+              <li>
+                Procedure and duration of debugging cannot be so constrained
+              </li>
+              <li>Debugging is impossible without detailed design knowledge</li>
+              <li>Debugging must be done by an insider</li>
+              <li>Automated debugging is still a dream</li>
+              <li>
+                Debugging is not at all an aspect of the SDLC. It rather occurs
+                as a consequence of the process of testing.
+              </li>
+              <li>
+                This process can begin after the execution of the test case and
+                the identification of errors.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">2.</span>
+            <span class="subject__question-text"
+              >Phases of Software Testing&nbsp;<span class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <h4>Phase 1:&nbsp;Static Testing (Requirements Testing)</h4>
+            <p>
+              During static testing, developers work to avoid potential problems
+              that might arise later. Without executing the code, they perform
+              manual or automated reviews of the supporting documents for the
+              software, such as requirement specifications, looking for any
+              potential ambiguities, errors or redundancies. The goal is to
+              preempt defects before introducing them to the software system.
+            </p>
+            <h4>
+              Phase 2:&nbsp;Unit Testing&nbsp;
+              <span class="subject__mark-flag">[2 Mark] [5 Mark]</span>
+            </h4>
+            <p>
+              The next phase of software testing is unit testing. During this
+              phase, the software undergoes assessments of its specific units,
+              or its functions and procedures, to ensure that each works
+              properly on its own. The developers may use white box testing to
+              evaluate the software's code and internal structure, commonly
+              before delivering the software for formal testing by testers. Unit
+              testing can occur whenever a piece of code undergoes change, which
+              allows for quick resolution of issues.
+            </p>
+            <h4>
+              Phase 3:&nbsp;Integration Testing&nbsp;
+              <span class="subject__mark-flag">[5 Mark]</span>
+            </h4>
+            <p>
+              Integration testing involves testing all the units of a program as
+              a group in order to find issues with how the separate software
+              functions interact with one another. Through integration testing,
+              the developers can determine the overall efficiency of the units
+              as they run together. This phase is important because the
+              program's overall functionality relies on the units operating
+              simultaneously as a complete system, not as isolated procedures.
+            </p>
+            <h4>
+              Phase 4:&nbsp;System Testing&nbsp;
+              <span class="subject__mark-flag">[5 Mark]</span>
+            </h4>
+            <p>
+              In the system testing phase, the software undergoes its first test
+              as a complete, integrated application to determine how well it
+              carries out its purpose. For this, the developers pass the
+              software to independent testers who had no involvement in its
+              development in order to ensure that the testing results stem from
+              impartial evaluations. System testing is vital because it ensures
+              that the software meets the requirements as determined by the
+              client.
+            </p>
+            <h4>Phase 5:&nbsp;Acceptance Testing (User Acceptance Testing)</h4>
+            <p>
+              Acceptance testing is the last phase of software testing. Its
+              purpose is to evaluate the software's readiness for release and
+              practical use. Testers may perform acceptance testing alongside
+              individuals who represent the software's target audience.
+              Acceptance testing aims to show whether the software meets the
+              needs of its intended users and that any changes the software
+              experienced during development are appropriate for use. Once the
+              software passes acceptance testing, it moves on to production.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">3.</span>
+            <span class="subject__question-text"
+              >Explain bug. Types of Bugs.&nbsp;<span class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              A software bug is a problem causing a program to crash or produce
+              invalid output. The problem is caused by insufficient or erroneous
+              logic. A bug can be an error, mistake, defect, or fault, which may
+              cause failure or deviation from expected results.
+            </p>
+            <p>
+              Software bugs should be caught during the testing phase of the
+              software development life cycle, but some can go undetected until
+              after deployment.
+            </p>
+            <h4>Types of bugs:</h4>
+            <ol>
+              <li>
+                <h4>Logic bugs</h4>
+                <p>
+                  One of the types of coding errors that can cause the program
+                  to output incorrectly or even freeze or crash. For example, an
+                  infinite loop would cause the program to repeat the sequence
+                  of actions indefinitely until it crashes or halts due to
+                  external intervention, such as the program closing or a power
+                  outage.
+                </p>
+              </li>
+              <li>
+                <h4>Calculation errors</h4>
+                <p>
+                  Calculation errors may occur due to bad logic, an incorrect
+                  formula, a data type mismatch or a coding error. Calculation
+                  errors can be serious. For example, a calculation error in a
+                  banking system can result in loss of money. Fixing the
+                  calculation error is typically just a matter of math.
+                </p>
+              </li>
+              <li>
+                <h4>Functional Errors</h4>
+                <p>
+                  This type of error occurs whenever software does not behave as
+                  intended. For example, a Login button doesn’t allow users to
+                  login, an Add to cart button that doesn’t update the cart,
+                  etc. So basically, any component in an app or website that
+                  doesn’t function as intended is a functional bug.
+                </p>
+              </li>
+              <li>
+                <h4>Security bugs</h4>
+                <p>
+                  Security errors are perhaps one of the most severe defects,
+                  making the project vulnerable. This type of bugs opens the
+                  software, company, and customers to a potential intense
+                  attack.
+                </p>
+              </li>
+              <li>
+                <h4>Syntax errors</h4>
+                <p>
+                  Such errors occur in the program’s source code and prevent the
+                  program from compiling correctly. This type of defect is
+                  widespread and usually occurs when there are one or more
+                  missing or incorrect characters in the code. For example,
+                  missing one parenthesis can cause a syntax error.
+                </p>
+              </li>
+              <li>
+                <h4>Compatibility errors</h4>
+                <p>
+                  These software bugs occur when an application does not run
+                  consistently across different hardware, operating systems, and
+                  browsers.
+                </p>
+              </li>
+              <li>
+                <h4>Performance bugs</h4>
+                <p>
+                  This is a type of software bug, related to speed, stability,
+                  response time, and software resource consumption. Such defects
+                  are discovered during the performance testing phase.
+                </p>
+              </li>
+              <!-- <li>
+                <h4>Usability defects</h4>
+                <p>
+                  A usability defect makes the software difficult or
+                  inconvenient, such as a complex registration form. This type
+                  of error prevents the user from using the software to its full
+                  potential. Software engineers and UX designers must review
+                  their software against the Web Content Accessibility
+                  Guidelines and other usability requirements to detect such
+                  errors.
+                </p>
+              </li>
+
+              <li>
+                <h4>Communication errors</h4>
+                <p>
+                  This type of error arises when a communication breakdown
+                  occurs between software and the end-user. For example. a
+                  communication bug is bound to occur during the software use if
+                  it contains undocumented features. For seamless and effective
+                  communication between both parties, software should be easy to
+                  use and provide all necessary instructions and recommendations
+                  for users to interact with a program.
+                </p>
+              </li> -->
+            </ol>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <section class="subject" id="SAZ6A">
+      <h1 class="heading--primary heading--white subject__heading--primary">
+        Web Technology
+      </h1>
+
+      <div class="nav__goto">
+        <input
+          class="nav__goto-input"
+          type="number"
+          placeholder="Question number..."
+          min="1"
+        />
+        <a class="nav__goto-btn"><img src="./assets/img/search-icon.png" /></a>
+      </div>
+
+      <div class="nav__top">&nbsp;</div>
+
+      <div class="subject__answer-box">
+        <h2 class="heading--secondary subject__heading--secondary">
+          10Marks & 5Marks
+        </h2>
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">1.</span>
+            <span class="subject__question-text"
+              >Dictionary Object in VBScript&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              The Dictionary object stores name/value pairs(referred to as the
+              key and item respectively) in an array. The key is a unique
+              identifier for the corresponding item and cannot be used for any
+              other item in the same Dictionary object.
+            </p>
+            <p>
+              The following code creates a Dictionary object called “cars”, adds
+              some key/item pairs, retrieves the item value for the key ‘b’
+              using the Item property and then outputs the outputting string to
+              the browser.
+            </p>
+            <ul>
+              <li>
+                <strong>Code:</strong>
+                <p>
+                  <code>
+                    <% <br />
+                    Dim cars <br />
+                    Set cars = CreateObject("Scripting.Dictionary") <br />
+                    cars.Add "a", "Alvis" <br />
+                    cars.Add "b", "Buick" <br />
+                    cars.Add "c", "Cadillac" <br />
+                    Response.Write "The value corresponding to the key 'b' is "
+                    <br />
+                    cars.Item("b") <br />
+                    %>
+                  </code>
+                </p>
+              </li>
+              <li>
+                <strong>Output:</strong>
+                <p>"The value corresponding to the key 'b' is Buick"</p>
+              </li>
+              <li>
+                <strong>Explanation:</strong>
+                <p>
+                  This code creates a Dictionary object called "cars", adds some
+                  key/item pairs, retrieves the item value for the key 'b' using
+                  the Item property and then outputs the resulting string to the
+                  browser.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">2.</span>
+            <span class="subject__question-text"
+              >What is procedure in VBScript? How to use it? How to define
+              it?&nbsp;<span class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              Procedures are small logical components which breaks (splits) the
+              program into a separate task. Procedures can be called inside of
+              another procedure
+            </p>
+            <p>
+              Procedures can take its arguments, perform a series of operations
+              and changes the values of its arguments.
+            </p>
+            <p>The benefits of programming with procedures are:</p>
+            <ul>
+              <li>Debugging can be easily done</li>
+              <li>
+                A procedure can act as a building block for another procedure in
+                a program
+              </li>
+            </ul>
+            <p>The general format of the VBScript procedures are as follows:</p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>
+                  <code>
+                    Procedure_type Procedure_Name(argument_list) <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;the procedure heading <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;declaration statements <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;execution statements <br />
+                    End Procedure_type
+                  </code>
+                </p>
+              </li>
+              <li>
+                <strong>Example:</strong>
+                <p>
+                  <code>
+                    &lt;html&gt; <br />
+                    &lt;body&gt; <br />
+                    &lt;script language="vbscript" type="text/vbscript"&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;Function sayHello() <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;msgbox("Hello there") <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;End Function <br />
+                    &lt;/script&gt; <br />
+                    &lt;/body&gt; <br />
+                    &lt;/html&gt; <br />
+                  </code>
+                </p>
+              </li>
+            </ul>
+            <p>A procedure can have two parts:</p>
+            <ol>
+              <li>
+                A declaration statement act as a reservation from the memory
+                cells that are needed to hold data and program output and what
+                kind of information will be stored in each memory cell.
+              </li>
+              <li>
+                An execution statement is a statement that is translated into
+                machine language and executed later.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subject" id="SAZ6B">
+      <h1 class="heading--primary heading--white subject__heading--primary">
+        Data Communication & Networking
+      </h1>
+
+      <div class="nav__goto">
+        <input
+          class="nav__goto-input"
+          type="number"
+          placeholder="Question number..."
+          min="1"
+        />
+        <a class="nav__goto-btn"><img src="./assets/img/search-icon.png" /></a>
+      </div>
+
+      <div class="nav__top">&nbsp;</div>
+
+      <div class="subject__answer-box">
+        <h2 class="heading--secondary subject__heading--secondary">
+          10Marks & 5Marks
+        </h2>
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">1.</span>
+            <span class="subject__question-text"
+              >Topology&nbsp;<span class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <h4>Definition:</h4>
+            <ul>
+              <li>
+                Network topology is the arrangement of the elements of a
+                communication network.
+              </li>
+              <li>
+                Network topology can be used to define or describe the
+                arrangement of various types of telecommunication networks,
+                including command and control radio networks, industrial field
+                busses and computer networks.
+              </li>
+            </ul>
+            <h4>Types of Topology:</h4>
+            <h4 class="subject__sub-heading">
+              <span>Ⅰ.</span>
+              <span
+                >Bus Topology&nbsp;<span class="subject__mark-flag"
+                  >[5 Mark]</span
+                ></span
+              >
+            </h4>
+            <ul>
+              <li>
+                Bus topology is a network type in which every computer and
+                network device is connected to single cable. When it has exactly
+                two endpoints, it is called Linear Bus topology.
+              </li>
+            </ul>
+            <h4>Advantages</h4>
+            <ul>
+              <li>It is cost effective</li>
+              <li>
+                Cable required is least compared to another network topology.
+              </li>
+              <li>It is easy to understand.</li>
+            </ul>
+            <img src="./assets/img/saz6b-bus.png" alt="bus-topology" />
+            <h4 class="subject__sub-heading">
+              <span>ⅠⅠ.</span>
+              <span
+                >Ring Topology&nbsp;<span class="subject__mark-flag"
+                  >[5 Mark]</span
+                ></span
+              >
+            </h4>
+            <ul>
+              <li>
+                It is called Ring topology because it forms a ring as each
+                computer is connected to another computer, with the last one
+                connected to the first. In ring topology, each device have
+                exactly two neighbors
+              </li>
+              <li>
+                In ring topology, the transmission is unidirectional, but it can
+                be made bidirectional by having 2 connections between each
+                Network Node, it is called Dual Ring Topology.
+              </li>
+              <li>
+                In Dual Ring Topology, two ring networks are formed, and data
+                flow is in opposite direction in them. Also, if one ring fails,
+                the second ring can act as a backup, to keep the network up.
+              </li>
+            </ul>
+            <h4>Advantages</h4>
+            <ul>
+              <li>
+                Transmitting network is not affected by high traffic or by
+                adding more nodes, as only the nodes having tokens can transmit
+                data.
+              </li>
+              <li>Cheap to install and expand.</li>
+            </ul>
+            <img src="./assets/img/saz6b-ring.png" alt="ring-topology" />
+            <h4 class="subject__sub-heading">
+              <span>ⅠⅠⅠ.</span>
+              <span
+                >Star Topology&nbsp;<span class="subject__mark-flag"
+                  >[5 Mark]</span
+                ></span
+              >
+            </h4>
+            <ul>
+              <li>
+                In this type of topology all the computers are connected to a
+                single hub through a cable. This hub is the central node and all
+                others nodes are connected to the central node.
+              </li>
+              <li>Hub acts as a repeater for data flow.</li>
+            </ul>
+            <h4>Advantages</h4>
+            <ul>
+              <li>Fast performance with few nodes and low network traffic.</li>
+              <li>Hub can be upgraded easily.</li>
+              <li>Easy to troubleshoot.</li>
+              <li>Easy to setup and modify.</li>
+              <li>
+                Only that node is affected which has failed, rest of the nodes
+                can work smoothly.
+              </li>
+            </ul>
+            <img src="./assets/img/saz6b-star.png" alt="star-topology" />
+            <h4 class="subject__sub-heading">
+              <span>ⅠV.</span>
+              <span>Mesh Topology</span>
+            </h4>
+            <ul>
+              <li>
+                It is a point-to-point connection to other nodes or devices. All
+                the network nodes are connected to each other.
+              </li>
+              <li>Mesh has n(n-1)/2 physical channels to link n devices.</li>
+            </ul>
+            <h4>Advantages</h4>
+            <ul>
+              <li>Each connection can carry its own data load.</li>
+              <li>It is robust.</li>
+              <li>Fault is diagnosed easily.</li>
+              <li>Provides security and privacy.</li>
+            </ul>
+            <img src="./assets/img/saz6b-mesh.png" alt="mesh-topology" />
+            <h4 class="subject__sub-heading">
+              <span>V.</span>
+              <span>Hybrid Topology</span>
+            </h4>
+            <ul>
+              <li>
+                It is two different types of topologies which is a mixture of
+                two or more topologies. For example, if in an office in one
+                department ring topology is used and in another star topology is
+                used, connecting these topologies will result in Hybrid Topology
+                (ring topology and star topology).
+              </li>
+              <li>
+                Inherits the advantages and disadvantages of the topologies
+                included
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <section class="subject" id="SAZ5B">
+      <h1 class="heading--primary heading--white subject__heading--primary">
+        Software Engineering
+      </h1>
+
+      <div class="nav__goto">
+        <input
+          class="nav__goto-input"
+          type="number"
+          placeholder="Question number..."
+          min="1"
+        />
+        <a class="nav__goto-btn"><img src="./assets/img/search-icon.png" /></a>
+      </div>
+
+      <div class="nav__top">&nbsp;</div>
+
+      <div class="subject__answer-box">
+        <h2 class="heading--secondary subject__heading--secondary">
+          10Marks & 5Marks
+        </h2>
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">1.</span>
+            <span class="subject__question-text"
+              >Software Design&nbsp;<span class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              Software design is the process to transform the user requirements
+              into some suitable form, which helps the programmer in software
+              coding and implementation.
+            </p>
+            <h4>
+              Objectives of Software Design&nbsp;<span
+                class="subject__mark-flag"
+                >[5 Mark]</span
+              >
+            </h4>
+            <ol>
+              <li>
+                <strong>Correctness:</strong>&nbsp;<br />A good design should be
+                correct i.e. it should correctly implement all the
+                functionalities of the system.
+              </li>
+              <li>
+                <strong>Efficiency:</strong>&nbsp;<br />A good software design
+                should address the resources, time, and cost optimization
+                issues.
+              </li>
+              <li>
+                <strong>Understandability:</strong>&nbsp;<br />A good design
+                should be easily understandable, for which it should be modular
+                and all the modules are arranged in layers.
+              </li>
+              <li>
+                <strong>Completeness:</strong>&nbsp;<br />The design should have
+                all the components like data structures, modules, and external
+                interfaces, etc.
+              </li>
+              <li>
+                <strong>Maintainability:</strong>&nbsp;<br />A good software
+                design should be easily amenable to change whenever a change
+                request is made from the customer side.
+              </li>
+            </ol>
+            <h4>
+              Software Design Concepts&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]</span
+              >
+            </h4>
+            <p>
+              The software design concept simply means the idea or principle
+              behind the design. It describes how you plan to solve the problem
+              of designing software, the logic, or thinking behind how you will
+              design software.
+            </p>
+            <ol>
+              <li>
+                <strong>Abstraction:</strong>&nbsp;<span
+                  class="subject__mark-flag"
+                  >[2 Mark]</span
+                >&nbsp;<br />Abstraction simply means to hide the details to
+                reduce complexity and increases efficiency or quality. Different
+                levels of Abstraction are necessary and must be applied at each
+                stage of the design process so that any error that is present
+                can be removed to increase the efficiency of the software
+                solution and to refine the software solution.
+              </li>
+              <li>
+                <strong>Modularity:</strong>&nbsp;<span
+                  class="subject__mark-flag"
+                  >[2 Mark]</span
+                >&nbsp;<br />Modularity simply means dividing the system or
+                project into smaller parts to reduce the complexity of the
+                system or project. In the same way, modularity in design means
+                subdividing a system into smaller parts so that these parts can
+                be created independently and then use these parts in different
+                systems to perform different functions. If the system contains
+                fewer components then it would mean the system is complex which
+                requires a lot of effort (cost) but if we are able to divide the
+                system into components then the cost would be small.
+              </li>
+              <li>
+                <strong>Refinement:</strong>&nbsp;<span
+                  class="subject__mark-flag"
+                  >[2 Mark]</span
+                >&nbsp;<br />Refinement simply means to refine something to
+                remove any impurities if present and increase the quality. The
+                refinement concept of software design is actually a process of
+                developing or presenting the software or system in a detailed
+                manner that means to elaborate a system or software. Refinement
+                is very necessary to find out any error if present and then to
+                reduce it.
+              </li>
+              <li>
+                <strong>Information Hiding:</strong>&nbsp;<span
+                  class="subject__mark-flag"
+                  >[2 Mark]</span
+                >&nbsp;<br />Information hiding simply means to hide the
+                information so that it cannot be accessed by an unwanted party.
+                In software design, information hiding is achieved by designing
+                the modules in a manner that the information gathered or
+                contained in one module is hidden and can’t be accessed by any
+                other modules.
+              </li>
+              <li>
+                <strong>Architecture:</strong>&nbsp;<br />Architecture simply
+                means a technique to design a structure of something.
+                Architecture in designing software is a concept that focuses on
+                various elements and the data of the structure. These components
+                interact with each other and use the data of the structure in
+                architecture.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">2.</span>
+            <span class="subject__question-text"
+              >Types of Testing&nbsp;<span class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              Testing is the process of executing a program with the aim of
+              finding errors. To make our software perform well it should be
+              error-free. If testing is done successfully it will remove all the
+              errors from the software.
+            </p>
+
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span
+                >Unit Testing&nbsp;<span class="subject__mark-flag"
+                  >[2 Mark]</span
+                ></span
+              >
+            </h4>
+            <p>
+              It focuses on the smallest unit of software design. In this, we
+              test an individual unit or group of interrelated units. It is
+              often done by the programmer by using sample input and observing
+              its corresponding outputs.
+            </p>
+            <p>Example:</p>
+            <ul>
+              <li>
+                In a program we are checking if loop, method or function is
+                working fine
+              </li>
+              <li>Misunderstood or incorrect, arithmetic precedence.</li>
+              <li>Incorrect Initialization.</li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>Integration Testing</span>
+            </h4>
+            <p>
+              The objective is to take unit tested components and build a
+              program structure that has been dictated by design. Integration
+              testing is testing in which a group of components is combined to
+              produce output.
+            </p>
+            <p>
+              Integration testing is of four types: (i) Top-down (ii) Bottom-up
+              (iii) Sandwich (iv) Big-Bang
+            </p>
+            <p>Example:</p>
+            <ul>
+              <li>
+                <strong>Black Box testing:</strong> It is used for validation.
+                In this we ignore internal working mechanism and focus on
+                <span class="underline">what is the output?.</span>
+              </li>
+              <li>
+                <strong>White Box testing:</strong> It is used for verification.
+                In this we focus on internal mechanism i.e.
+                <span class="underline">how the output is achieved?</span>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span>Regression Testing</span>
+            </h4>
+            <p>
+              Every time a new module is added leads to changes in the program.
+              This type of testing makes sure that the whole component works
+              properly even after adding components to the complete program.
+            </p>
+            <p>Example:</p>
+            <ul>
+              <li>
+                In school record suppose we have module staff, students and
+                finance combining these modules and checking if on integration
+                these module works fine is regression testing
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>4.</span>
+              <span>Smoke Testing</span>
+            </h4>
+            <p>
+              This test is done to make sure that software under testing is
+              ready or stable for further testing It is called a smoke test as
+              the testing an initial pass is done to check if it did not catch
+              the fire or smoke in the initial switch on.
+            </p>
+            <p>Example:</p>
+            <ul>
+              <li>
+                If project has 2 modules so before going to module make sure
+                that module 1 works properly
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>5.</span>
+              <span
+                >Alpha Testing (Acceptance Testing)&nbsp;<span
+                  class="subject__mark-flag"
+                  >[2 Mark]</span
+                ></span
+              >
+            </h4>
+            <p>
+              This is a type of validation testing. It is a type of acceptance
+              testing which is done before the product is released to customers.
+              It is typically done by QA people.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>6.</span>
+              <span>Beta Testing</span>
+            </h4>
+            <p>
+              The beta test is conducted at one or more customer sites by the
+              end-user of the software. This version is released for a limited
+              number of users for testing in a real-time environment
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>7.</span>
+              <span
+                >System Testing&nbsp;<span class="subject__mark-flag"
+                  >[2 Mark]</span
+                ></span
+              >
+            </h4>
+            <p>
+              This software is tested such that it works fine for the different
+              operating systems. It is covered under the black box testing
+              technique. In this, we just focus on the required input and output
+              without focusing on internal working.<br />In this, we have
+              security testing, recovery testing, stress testing, and
+              performance testing
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>8.</span>
+              <span>Stress Testing</span>
+            </h4>
+            <p>
+              In this, we give unfavorable conditions to the system and check
+              how they perform in those conditions.
+            </p>
+            <p>Example:</p>
+            <ul>
+              <li>
+                Test cases that require maximum memory or other resources are
+                executed
+              </li>
+              <li>
+                Test cases that may cause thrashing in a virtual operating
+                system
+              </li>
+              <li>Test cases that may cause excessive disk requirement</li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>9.</span>
+              <span>Performance Testing</span>
+            </h4>
+            <p>
+              It is designed to test the run-time performance of software within
+              the context of an integrated system. It is used to test the speed
+              and effectiveness of the program. It is also called load testing.
+              In it we check, what is the performance of the system in the given
+              load.
+            </p>
+            <p>Example:</p>
+            <ul>
+              <li>Checking number of processor cycles.</li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>10.</span>
+              <span>Object-Oriented Testing</span>
+            </h4>
+            <p>
+              This testing is a combination of various testing techniques that
+              help to verify and validate object-oriented software. This testing
+              is done in the following manner:
+            </p>
+            <p>Example:</p>
+            <ul>
+              <li>Testing of Requirements,</li>
+              <li>Design and Analysis of Testing,</li>
+              <li>Testing of Code,</li>
+              <li>Integration testing,</li>
+              <li>System testing,</li>
+              <li>User testing.</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>3.</span>
+            <span
+              >Software Cost Estimation Techniques&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>
+              Software cost estimates are based on past perfomance. Cost
+              estimates can be made either (i)top-down (ii)bottom-up
+            </p>
+            <ul>
+              <li>
+                <strong>Top-Down:</strong> focus on system level cost such as
+                computer resources. Personnel level required to develop the
+                system
+              </li>
+              <li>
+                <strong>Bottom-Up:</strong> focus on the cost to develop each
+                module or subsystem. Then combined to arrive at an overall
+                estimate
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span
+                >Expert Judgement&nbsp;<span class="subject__mark-flag"
+                  >[5 Mark]</span
+                ></span
+              >
+            </h4>
+            <p>Most widelly used cost estimation techniques(top down)</p>
+            <p>
+              Expert judgement relies on the experience background and business
+              sense of one or more key people in an organisation mode.
+            </p>
+            <p>
+              Example: An expert might arrive at a cost estimate in a following
+              manner,
+            </p>
+            <ol>
+              <li>
+                The goal is to estimate the requirements to develop a process
+                controll system
+              </li>
+              <li>
+                It is similar to one that was developed last year in 10 months
+                at a cost of one million dollar
+              </li>
+              <li>It was not a respectible profit</li>
+              <li>
+                The new system has same control functions as the previous but
+                25% more control activities. So the time and cost is increased
+                by 25%
+              </li>
+              <li>
+                Same computer and controlling devices and many of the same
+                people are available to develop the new sysem therefore 20% of
+                the estimate is reduced
+              </li>
+              <li>
+                Reusing the low level code from the previous reduces the time
+                and cost estimates by 25%
+              </li>
+              <li>
+                This results in the estimation of 8,00,000$ & 8 Months
+                development time
+              </li>
+              <li>
+                With a small margin of safety added, it becomes 8,50,000 & 9
+                Months development time
+              </li>
+              <li>Advantage: Experience</li>
+            </ol>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span
+                >Delphi Cost Estimation&nbsp;<span class="subject__mark-flag"
+                  >[5 Mark]</span
+                ></span
+              >
+            </h4>
+            <p>This technique was developed at the rand corporation in 1948</p>
+            <p>
+              This technique can be adapted to software estimation in the
+              following manner,
+            </p>
+            <ol>
+              <li>
+                A co-ordinator was developed at the rand corporation in 1948
+              </li>
+              <li>
+                Estimators study the document and complete their estimates
+              </li>
+              <li>
+                They ask questions to the co-ordinator but they wont discuss
+                with one another
+              </li>
+              <li>
+                The co-ordinator prepares and distributes a summary of the
+                estimators response
+              </li>
+              <li>
+                The estimators complete another estimate from the previous
+                estimator
+              </li>
+              <li>The process is iterated for as many as required</li>
+            </ol>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span
+                >Work Breakdown Structure&nbsp;<span class="subject__mark-flag"
+                  >[5 Mark]</span
+                ></span
+              >
+            </h4>
+            <ul>
+              <li>WBS is a bottom-up estimation tool</li>
+              <li>
+                WBS is a hierarchical chart that accounts for the indiviual
+                parts of the system
+              </li>
+              <li>
+                WBS chart can indicate either product hierarchy or process
+                hierarchy
+              </li>
+              <li>
+                <strong>Product-Hierarchy:</strong> It identifies the product
+                components and indicates the manner in which the components are
+                interconnected
+              </li>
+              <li>
+                <strong>Process-Hierarchy:</strong> It identifies the work
+                activity and relationship among those activities
+              </li>
+              <li>
+                Using WBS cost are estimated by assigning cost to each
+                individual component in the chart and summing the cost
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>4.</span>
+              <span
+                >COCOMO (Constructive Cost Model/Algorithmic Cost
+                Model)&nbsp;<span class="subject__mark-flag"
+                  >[5 Mark]</span
+                ></span
+              >
+            </h4>
+            <p>
+              This family of models was proposed by Boehm in 1981. The models
+              have been widely accepted in practice. In the COCOMOs, the
+              code-size S is given in thousand LOC (KLOC) and efforts is on
+              person-month. COCOMO is actually a hierarchy of estimation models
+              that address the following areas:
+            </p>
+            <p>
+              <strong>Application composition model:</strong> Used during the
+              early stages of software engineering, when prototyping of user
+              interfaces, consideration of software and system interaction,
+              assessment of performance, and technology maturity are paramount.
+            </p>
+            <p>
+              <strong>Early design stage model:</strong> Used once requirements
+              have stabilized and basic software architecture has been
+              established.
+            </p>
+            <p>
+              <strong>Post-architecture-stage model:</strong> Used during the
+              construction of the software.
+            </p>
+            <ol>
+              <li>
+                <p>
+                  <span class="underline">Basic COCOMO:</span> This model uses
+                  three sets of {a, b} depending only on the complexity of the
+                  software.
+                </p>
+                <ol>
+                  <li>
+                    For simple, well-understand applications, a = 2.4, b = 1.05;
+                  </li>
+                  <li>For more complex systems, a = 3.0, b = 1.15;</li>
+                  <li>For embedded systems, a = 3.6, b = 1.20;</li>
+                </ol>
+              </li>
+              <li>
+                <p>
+                  <span class="underline">Intermediate & Detailed COCOMO:</span>
+                  In the intermediate COCOMO, a nominal effort estimation is
+                  obtained using the power function with three sets of {a, b},
+                  with coefficient a being slightly different from that of the
+                  basic COCOMO.
+                </p>
+                <ol>
+                  <li>
+                    For simple, well-understood applications, a = 3.2, b = 1.05;
+                  </li>
+                  <li>For more complex systems, a = 3.0, b = 1.15;</li>
+                  <li>For embedded systems, a= 2.8, b = 1.20;</li>
+                </ol>
+                <p>
+                  Then, fifteen Cost Factors with values ranging from 0.7 to
+                  1.66 are determined. The overall impact factor 'M' is obtained
+                  as the product of all individual factors, and the estimate is
+                  obtained by multiplying 'M' to the nominal estimate
+                </p>
+                <p>
+                  While both basic and intermediate COCOMOs estimate the
+                  software cost at the system level, the detailed COCOMO works
+                  on each sub-system separately and has an obvious advantage for
+                  large systems that contain non-homogenous subsystems.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>4.</span>
+            <span
+              >Software Requirement Specification&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <h4>
+              Definition:
+              <span class="subject__mark-flag">[5 Mark]&nbsp;[2 Mark]</span>
+            </h4>
+            <p>
+              <strong>Software Requirement Specification (SRS) Format</strong>
+              as name suggests, is complete specification and description of
+              requirements of software that needs to be fulfilled for successful
+              development of software system. These requirements can be
+              functional as well as non-functional depending upon type of
+              requirement. The interaction between different customers and
+              contractor is done because its necessary to fully understand needs
+              of customers.
+            </p>
+            <p>
+              Depending upon information gathered after interaction, SRS is
+              developed which describes requirements of software that may
+              include changes and modifications that is needed to be done to
+              increase quality of product and to satisfy customer’s demand.
+            </p>
+            <h4>
+              Software Requirement Specification Format:
+              <span class="subject__mark-flag">[5 Mark]&nbsp;[10 Mark]</span>
+            </h4>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span>Introduction</span>
+            </h4>
+            <ul>
+              <li>
+                <strong>Purpose of the document &ndash;</strong>
+                <p>
+                  At first, main aim of why this document is necessary and
+                  what’s the purpose of document is explained and described.
+                </p>
+              </li>
+              <li>
+                <strong>Scope of the document &ndash;</strong>
+                <p>
+                  In this, overall working and main objective of document and
+                  what value it will provide to customer is described and
+                  explained. It also includes a description of development cost
+                  and time required.
+                </p>
+              </li>
+              <li>
+                <strong>Overview &ndash;</strong>
+                <p>
+                  In this, description of product is explained. It’s simply
+                  summary or overall review of product.
+                </p>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>General Description</span>
+            </h4>
+            <p>
+              In this, general functions of product which includes objective of
+              user, a user characteristic, features, benefits, about why its
+              importance is mentioned. It also describes features of user
+              community.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span>Functional Requirements</span>
+            </h4>
+            <p>
+              In this, possible outcome of software system which includes
+              effects due to operation of program is fully explained. All
+              functional requirements which may include calculations, data
+              processing, etc. are placed in a ranked order.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>4.</span>
+              <span>Interface Requirements</span>
+            </h4>
+            <p>
+              In this, software interfaces which mean how software program
+              communicates with each other or users either in form of any
+              language, code, or message are fully described and explained.
+              Examples can be shared memory, data streams, etc.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>5.</span>
+              <span>Performance Requirements</span>
+            </h4>
+            <p>
+              In this, how a software system performs desired functions under
+              specific condition is explained. It also explains required time,
+              required memory, maximum error rate, etc.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>6.</span>
+              <span>Design Constraints</span>
+            </h4>
+            <p>
+              In this, constraints which simply means limitation or restriction
+              are specified and explained for design team. Examples may include
+              use of a particular algorithm, hardware and software limitations,
+              etc.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>7.</span>
+              <span>Non-Functional Attributes</span>
+            </h4>
+            <p>
+              In this, non-functional attributes are explained that are required
+              by software system for better performance. An example may include
+              Security, Portability, Reliability, Reusability, Application
+              compatibility, Data integrity, Scalability capacity, etc.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>8.</span>
+              <span>Preliminary Schedule and Budgets</span>
+            </h4>
+            <p>
+              In this, initial version and budget of project plan are explained
+              which include overall time duration required and overall cost
+              required for development of project.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>9.</span>
+              <span>Appendices</span>
+            </h4>
+            <p>
+              In this, additional information like references from where
+              information is gathered, definitions of some specific terms,
+              acronyms, abbreviations, etc. are given and explained.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subject" id="SAZ5A">
+      <h1 class="heading--primary heading--white subject__heading--primary">
+        Database Management Systems
+      </h1>
+
+      <div class="nav__goto">
+        <input
+          class="nav__goto-input"
+          type="number"
+          placeholder="Question number..."
+          min="1"
+        />
+        <a class="nav__goto-btn"><img src="./assets/img/search-icon.png" /></a>
+      </div>
+
+      <div class="nav__top">&nbsp;</div>
+
+      <div class="subject__answer-box">
+        <h2 class="heading--secondary subject__heading--secondary">
+          10Marks & 5Marks
+        </h2>
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>1.</span>
+            <span
+              >Feasibility Study&nbsp;<span class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              The goal of a feasibility study is to determine whether a proposed
+              project is worth pursuing. The study examines two fundamental
+              categories costs and potential benefits. A feasibility study
+              should provide management with enough information to decide, they
+              are
+            </p>
+            <ul>
+              <li>Whether the project can be done?</li>
+              <li>
+                Whether the final product will benefit its intended users?
+              </li>
+              <li>
+                What are the alternatives among which a solution will be chosen?
+              </li>
+              <li>Is there a preferred alternative?</li>
+            </ul>
+            <p>Feasibility study is divided into costs and benefits,</p>
+            <h4 class="subject__sub-heading">
+              <span>&#8544;.</span>
+              <span>Costs</span>
+            </h4>
+            <p>
+              Costs are divided into up-front or one-time costs and ongoing
+              costs.
+            </p>
+            <h4>Upfront/Onetime Costs</h4>
+            <ul>
+              <li>Software</li>
+              <li>Hardware</li>
+              <li>Communication</li>
+              <li>Data Conversion</li>
+              <li>Studies and Design Training</li>
+            </ul>
+            <p>
+              Almost all projects will entail similar up-front costs. The
+              organization will often have to purchase additional hardware,
+              software and communication equipment. These costs can be estimated
+              with the help of vendors.
+            </p>
+            <h4>Ongoing Costs</h4>
+            <ul>
+              <li>Personal</li>
+              <li>Supplies</li>
+              <li>Support</li>
+              <li>Software Upgrade</li>
+              <li>Software and Hardware Maintenance</li>
+            </ul>
+            <p>
+              Once the project is completed and the system installed, costs will
+              arise from several areas,
+            </p>
+            <ul>
+              <li>
+                New system might require additional personnel and supplies.
+              </li>
+              <li>
+                Additional training and support might be required to deal with
+                employee turnover and system modification
+              </li>
+              <li>
+                Software and hardware will have to be modified and replaced
+                entailing maintenance costs
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>&#8545;.</span>
+              <span>Benefits</span>
+            </h4>
+            <p>
+              Benefits are divided into cost savings, increased value and
+              strategic advantages
+            </p>
+            <h4>Cost Savings</h4>
+            <ul>
+              <li>Fewer Errors</li>
+              <li>Software Maintenance</li>
+              <li>Less User Training</li>
+              <li>Loss Data Maintenance</li>
+            </ul>
+            <h4>Increased Value</h4>
+            <ul>
+              <li>Better Access to Data</li>
+              <li>Better Decisions</li>
+              <li>Better Communication</li>
+              <li>More Timely Reports</li>
+              <li>Faster Reaction to Change</li>
+              <li>New Products and Services</li>
+            </ul>
+            <h4>Strategic Advantages</h4>
+            <ul>
+              <li>
+                Lock and Competitors
+                <ul>
+                  <li>Benefits are even more difficult to estimate.</li>
+                  <li>
+                    Some benefits are tangible and can be measured with a degree
+                    of accuracy.
+                  </li>
+                  <li>
+                    Many benefits are intangible and cannot be assigned specific
+                    monetary values.
+                  </li>
+                  <li>
+                    In a database project benefits can arise from improving
+                    operation which leads to cost savings.
+                  </li>
+                  <li>
+                    Database projects can provide many benefits but the
+                    organization will receive those benefits only if the project
+                    is completed correctly, on time and within the specified
+                    budgets.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>2.</span>
+            <span
+              >Database Testing / Testing Queries&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>
+              Database testing checks the integrity and consistency of data by
+              verifying the schema, tables, triggers, etc., of the application’s
+              database that is being tested. In Database testing, we create
+              complex queries to perform the load or stress test on the database
+              and verify the database’s responsiveness.
+            </p>
+            <p>
+              An issue in the database might cause a crash or leakage of data,
+              we are aware of the importance of keeping the privacy of the
+              user’s data. So, it is crucial to perform database testing to
+              ensure data integrity, consistency, etc., are being maintained.
+            </p>
+            <p>
+              By performing database testing we can guarantee the security and
+              reliability of an application as it exposes the vulnerability in
+              the database.
+            </p>
+            <h4>Benefits of Database Testing:</h4>
+            <ol>
+              <li>
+                Database testing helps in ensuring the database’s efficiency,
+                stability, performance, and security.
+              </li>
+              <li>
+                During database testing, we can understand the behavior of
+                complex transactions and how the system handles such queries.
+              </li>
+              <li>
+                It makes sure that only valid data values and information are
+                received and stored in the database.
+              </li>
+              <li>
+                Database testing protects us from vulnerabilities like data
+                loss, saves aborted transaction data, and doesn’t allow access
+                to information for unauthorized users.
+              </li>
+            </ol>
+            <h4>Example:</h4>
+            <p>
+              Consider an application that captures the day-to-day transaction
+              details for users and stores the details in the database. From
+              database testing point of view, the following checks should be
+              performed,
+            </p>
+            <ol>
+              <li>
+                The transactional information from the application should be
+                stored in the database and it should provide correct information
+                to the user.
+              </li>
+              <li>
+                Information should not be lost when it is loaded to database.
+              </li>
+              <li>
+                Only completed transactions should be stored and all incomplete
+                operations should be aborted by the application.
+              </li>
+              <li>
+                Access authorization to database should be maintained. No
+                unapproved or unauthorized access to user information should be
+                provided.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>3.</span>
+            <span
+              >Client/Server Database Systems&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark]&nbsp;[5 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <h4>Client/Server</h4>
+            <p>
+              Client/server describes the relationship between two computer
+              programs in which one program, the client, makes a service request
+              from another program, the server, which fulfills the request.
+            </p>
+            <p>
+              In a network, the client/server model provides a convenient way to
+              interconnect programs that are distributed efficiently across
+              different locations. The client/server model has become one of the
+              central ideas of network computing.
+            </p>
+            <p>
+              Client-server computing is a software engineering technique often
+              used within distributed computing that allows two independent
+              processes to exchange information, through a dedicated connection,
+              following an established protocol.
+            </p>
+            <p>
+              Client-server system is mainly two different processors that
+              exchange information on common server. Unlike peer to peer system
+              there is one server that stores the information and gives it only
+              when the client provides specific identification like username.
+            </p>
+            <p>
+              Functions such as email exchange, web access and database access,
+              are built on the client-server model.
+            </p>
+            <img src="assets/img/dbms-3.1.jpg" alt="" />
+            <h4>Example:</h4>
+            <p>
+              To check the bank account from computer, a client program in the
+              computer forwards the request to a server program at the bank.
+              That program may in turn forward the request to its own client
+              program that sends a request to a database server at another bank
+              computer to retrieve the account balance. The balance is returned
+              back to the bank data client, which in turn serves it back to the
+              client in the personal computer, which displays the information
+              for us.
+            </p>
+            <h4>
+              Web as a Client Server System&nbsp;<span
+                class="subject__mark-flag"
+                >[5 Mark]</span
+              >
+            </h4>
+            <p>
+              The World Wide Web (abbreviated as WWW or W3, commonly known as
+              the Web), is a system of interlinked hypertext documents accessed
+              via the Internet. With a web browser, one can view web pages that
+              may contain text, images, videos, and other multimedia, and
+              navigate between them via hyperlinks.
+            </p>
+            <p>
+              The World Wide Web was designed as a client/server system. The
+              objective was to enable people to share information with their
+              colleagues. The clients run browser software that receives and
+              displays data files. The servers run web server software that
+              answers requests, finds the appropriate files, and sends the
+              required data.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>4.</span>
+            <span
+              >DML (Data Manipulation Language)&nbsp;<span
+                class="subject__mark-flag"
+                >[5 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <h4>
+              Definition: <span class="subject__mark-flag">[2 Mark]</span>
+            </h4>
+            <p>
+              Data Manipulation Language (DML) commands in SQL deals with
+              manipulation of data records stored within the database tables. It
+              does not deal with changes to database objects and its structure.
+            </p>
+            <h4>DML Commands:</h4>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span>SELECT</span>
+            </h4>
+            <p>
+              Used to query or fetch selected fields or columns from a database
+              table.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>SELECT column_name<br />FROM table_name;</p>
+              </li>
+              <!-- <li>
+                            <strong>Example:</strong>
+                            <p>SELECT customer_id, sale_date <br>FROM customers;</p>
+                        </li> -->
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>INSERT</span>
+            </h4>
+            <p>
+              Used to insert new data records or rows in the database table.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>
+                  INSERT INTO table_name<br />VALUES (a list of data values);
+                </p>
+              </li>
+              <!-- <li>
+                            <strong>Example:</strong>
+                            <p>INSERT INTO stu_details<br>VALUES ('7930', 'John.M', '12-1-1999');</p>
+                        </li> -->
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span>UPDATE</span>
+            </h4>
+            <p>
+              Used to set the value of a field or column for a particular record
+              to a new value.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>
+                  UPDATE table_name<br />SET column_name = value<br />WHERE
+                  condition;
+                </p>
+              </li>
+              <!-- <li>
+                            <strong>Example:</strong>
+                            <p>UPDATE customers<br>SET store_state = 'DL'<br>WHERE store_state = 'NY';</p>
+                        </li> -->
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>4.</span>
+              <span>DELETE</span>
+            </h4>
+            <p>Used to remove one or more rows from the database table.</p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>DELETE FROM table_name<br />WHERE condition;</p>
+              </li>
+              <!-- <li>
+                            <strong>Example:</strong>
+                            <p>DELETE FROM customers<br>WHERE store_state = 'MH'</p>
+                        </li> -->
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>5.</span>
+            <span
+              >DDL (Data Definition Language)&nbsp;<span
+                class="subject__mark-flag"
+                >[5 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <h4>
+              Definition: <span class="subject__mark-flag">[2 Mark]</span>
+            </h4>
+            <p>
+              Data Definition Language or DDL commands in standard query
+              language(SQL) are used to describe/define the database schema.
+              These commands deal with database schema creation and its further
+              modifications.
+            </p>
+            <h4>DDL Commands:</h4>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span>CREATE</span>
+            </h4>
+            <p>
+              Used for creating database objects like a database or a database
+              table.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>CREATE DATABASE database_name;</p>
+                <p>
+                  CREATE TABLE table_name(<br />
+                  col_name_1 datatype CONSTRAINT,<br />
+                  col_name_2 datatype CONSTRAINT,<br />
+                  .<br />
+                  .<br />
+                  col_name_n datatype CONSTRAINT);
+                </p>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>ALTER</span>
+            </h4>
+            <p>
+              Used for modifying and renaming elements of an existing database
+              table.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>ALTER TABLE table_name<br />ADD (column_name datatype);</p>
+                <p>ALTER TABLE table_name_1<br />RENAME TO table_new_name;</p>
+                <p>ALTER TABLE table_name<br />DROP column_name;</p>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span>TRUNCATE</span>
+            </h4>
+            <p>Used to remove all the records from a database table.</p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>TRUNCATE TABLE table_name;</p>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>4.</span>
+              <span>DROP</span>
+            </h4>
+            <p>Used for removing an entire database or a database table.</p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>DROP DATABASE database_name;</p>
+                <p>DROP TABLE table_name;</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>6.</span>
+            <span
+              >DCL (Data Control Language)&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <h4>
+              Definition: <span class="subject__mark-flag">[2 Mark]</span>
+            </h4>
+            <p>
+              DCL is abbreviation of Data Control Language. It is used to create
+              roles, permissions, and referential integrity as well it is used
+              to control access to database by securing it.
+            </p>
+            <h4>DCL Commands:</h4>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span>GRANT</span>
+            </h4>
+            <p>
+              Used to provide authorization to one or more users to perform an
+              operation or a set of operations on a database object.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>GRANT privileges ON object TO user;</p>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>REVOKE</span>
+            </h4>
+            <p>
+              Used to Withdraw user's access privileges to database object given
+              with the GRANT command.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>REVOKE privileges ON object FROM user;</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>7.</span>
+            <span
+              >TCL (Transaction Control Language)&nbsp;<span
+                class="subject__mark-flag"
+                >[5 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <h4>
+              Definition: <span class="subject__mark-flag">[2 Mark]</span>
+            </h4>
+            <p>
+              Transaction Control Language commands are used to manage
+              transactions in the database. Managing transactions simply means
+              managing the changes made by DML-statements. It also allows
+              statements to be grouped together into logical transactions.
+            </p>
+            <h4>TCL Commands:</h4>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span>COMMIT</span>
+            </h4>
+            <p>Used to permanently save any transaction into the database.</p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>COMMIT;</p>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>SAVEPOINT</span>
+            </h4>
+            <p>
+              Used to temporarily save a transaction so that you can rollback to
+              that point whenever necessary.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>SAVEPOINT savepoint_name;</p>
+              </li>
+            </ul>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span>ROLLBACK</span>
+            </h4>
+            <p>
+              Used to restore the database to last committed state. It is also
+              used with savepoint command to jump to a savepoint in a
+              transaction.
+            </p>
+            <ul>
+              <li>
+                <strong>Syntax:</strong>
+                <p>ROLLBACK;</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>8.</span>
+            <span
+              >Data Clustering (Cluster Analysis)&nbsp;<span
+                class="subject__mark-flag"
+                >[5 mark]&nbsp;[10 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>
+              &bull;&nbsp;Cluster analysis or clustering is the assignment of a
+              set of observations into subsets (called clusters) so that
+              observations in the same cluster are similar in some sense
+            </p>
+            <p>
+              &bull;&nbsp;In other words, "Clustering" is the process of
+              organizing data into meaningful groups and these groups are called
+              clusters.
+            </p>
+            <p>
+              &bull;&nbsp;Data clustering improves performance by identifying
+              data that is commonly accessed together.
+            </p>
+            <p>
+              &bull;&nbsp;Only some of the large transaction-oriented database
+              systems support clustering i.e. ORACLE.
+            </p>
+            <h4>Advantages</h4>
+            <ul>
+              <li>
+                <p>
+                  Clustering the data improves application speed by reducing the
+                  number of disk accesses
+                </p>
+              </li>
+              <li>
+                <p>
+                  Clustering is useful in several exploratory pattern-analysis,
+                  grouping, decision-making and machine learning situations
+                  including data mining, document retrieval, image segmentation
+                  and pattern classification.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>9.</span>
+            <span
+              >Data Partitioning&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]&nbsp;[10 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>
+              &bull;&nbsp;Data partitioning is a technique to improve
+              application performance or security by splitting tables across
+              multiple locations.
+            </p>
+            <p>
+              &bull;&nbsp;Data partitioning is the process of logically or
+              physically partitioning data into segments that are more easily
+              maintained or accessed.
+            </p>
+            <h4>Horizontal Partitioning</h4>
+            <p>
+              &bull;&nbsp;Horizontal partitioning is often used to split data so
+              that it can be stored in location where it will use the most. It
+              involves putting
+              <span class="underline">different rows into different tables</span
+              >.
+            </p>
+            <p>
+              &bull;&nbsp;Some of the rows (i.e. active data) will be stored in
+              one location and other rows (i.e. inactive data) will be stored in
+              a different location. The active data will be stored on high speed
+              disk drives.
+            </p>
+            <p>
+              &bull;&nbsp;The user does not need to know about the split because
+              the DBMS automatically retrieve data from either location.
+            </p>
+            <h4>Vertical Partitioning</h4>
+            <p>
+              &bull;&nbsp;Vertical partitioning involves
+              <span class="underline">creating tables with fewer columns</span>
+              and using additional tables to store the remaining columns.
+            </p>
+            <p>
+              &bull;&nbsp;In vertical partitioning active or frequently used
+              columns of data are stored on a faster drive, while inactive or
+              rarely used columns are moved to a cheaper and slower drives.
+            </p>
+            <p>
+              &bull;&nbsp;Overall performance will improve because the DBMS will
+              be able to retrieve more of the smaller rows.
+            </p>
+            <p>
+              &bull;&nbsp;Vertical partitioning is useful for limiting the
+              amount of data that need to read into memory.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>10.</span>
+            <span
+              >Advantages of DBMS&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]&nbsp;[10 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>
+              The DBMS is preferred over the conventional file processing system
+              due to the following advantages,
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span>Minimal Data Redundancy:</span>
+            </h4>
+            <p>
+              Redundancy means repitition or duplication of data. In DBMS, the
+              data redundancy can be controlled or reduced but it is not removed
+              completely. By controlling the data redundancy, you can save
+              storage space.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>Data Consistency:</span>
+            </h4>
+            <p>
+              The DBMS also has system to maintain data consistency with minimal
+              effort.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span>Integration of Data:</span>
+            </h4>
+            <p>
+              Since data in database is stored in tables, any data in the
+              database can be easily retrieved, combined and compared using the
+              query system.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>4.</span>
+              <span>Data Sharing:</span>
+            </h4>
+            <p>
+              In DBMS, data can be shared by authorized users of the
+              organization. The DBA manages the data and gives rights to users
+              to access the data. Many users can be authorized to access the
+              same set of information simultaneously.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>5.</span>
+              <span>Ease of Application Development:</span>
+            </h4>
+            <p>
+              The DBMS provides tools that can be used to develop application
+              programs thereby reduces the cost and time for developing new
+              applications.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>6.</span>
+              <span>Uniform Security, Privacy & Integrity:</span>
+            </h4>
+            <p>
+              Centralized control and standard procedures can improve data
+              protection & data integrity in DBMS.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span>11.</span>
+            <span
+              >Components of DBMS&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]&nbsp;[10 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>A DBMS is evaluated based on the following components,</p>
+            <ol>
+              <li><p>Database Engine</p></li>
+              <li><p>Data Dictionary</p></li>
+              <li><p>Query Processor</p></li>
+              <li><p>Report Writer</p></li>
+              <li><p>Forms Generator</p></li>
+              <li><p>Application Generator</p></li>
+              <li><p>Communication and Integration</p></li>
+              <li><p>Security and Other Utilities</p></li>
+            </ol>
+            <h4>Database Engine</h4>
+            <p>
+              The database engine is the heart of the dbms. The engine is
+              responsible for defining, storing and retrieving the data. It
+              affects the performance (speed) and the ability to handle large
+              problems (scalability). It is a stand-alone component that can be
+              purchased and used as an independent software module.
+              <span class="underline">Example: Microsoft Jet Engine</span>
+            </p>
+            <h4>Data Dictionary</h4>
+            <p>
+              The data dictionary holds the definition of all the tables. A data
+              dictionary is a reserved space within a database which is used to
+              store information about the database itself i.e. design
+              information, user permissions etc.
+            </p>
+            <h4>Query Processor</h4>
+            <p>
+              It is the fundamental component of DBMS. It enables developers and
+              users to store and retrieve data. All database operations can be
+              run through the query language. Query language is processed by the
+              query processor.
+            </p>
+            <h4>Report Writer</h4>
+            <p>
+              Report is a summarization of database data. It extracts
+              information from one or more files and presents the information in
+              a specified format.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subject" id="SEZ5A">
+      <h1 class="heading--primary heading--white subject__heading--primary">
+        Visual Programming
+      </h1>
+
+      <div class="nav__goto">
+        <input
+          class="nav__goto-input"
+          type="number"
+          placeholder="Question number..."
+          min="1"
+        />
+        <a class="nav__goto-btn"><img src="./assets/img/search-icon.png" /></a>
+      </div>
+
+      <div class="nav__top">&nbsp;</div>
+
+      <div class="subject__answer-box">
+        <h2 class="heading--secondary subject__heading--secondary">
+          10Marks & 5Marks
+        </h2>
+      </div>
+    </section>
+
+    <section class="subject" id="SAZ5C">
+      <h1 class="heading--primary heading--white subject__heading--primary">
+        Resource Management Technique
+      </h1>
+
+      <div class="nav__goto">
+        <input
+          class="nav__goto-input"
+          type="number"
+          placeholder="Question number..."
+          min="1"
+        />
+        <a class="nav__goto-btn"><img src="./assets/img/search-icon.png" /></a>
+      </div>
+
+      <div class="nav__top">&nbsp;</div>
+
+      <div class="subject__answer-box">
+        <h2 class="heading--secondary subject__heading--secondary">
+          10Marks & 5Marks
+        </h2>
+        <div class="subject__answer"></div>
+      </div>
+    </section>
+
+    <section class="landing">
+      <h1 class="heading--primary heading--white landing__heading">
+        Important Questions (BCA)
+      </h1>
+
+      <div class="landing__card-box">
+        <div class="landing__card">
+          <h2 class="heading--secondary landing__card-heading">
+            Web Technology
+          </h2>
+          <div class="landing__card-content-box">
+            <p class="landing__card-content--text">
+              <strong>Sub-Code:</strong>SAZ6A
+            </p>
+            <a href="#SAZ6A" class="landing__card-content--link">Open &rarr;</a>
+          </div>
+        </div>
+        <div class="landing__card">
+          <h2 class="heading--secondary landing__card-heading">
+            Data Communication & Networking
+          </h2>
+          <div class="landing__card-content-box">
+            <p class="landing__card-content--text">
+              <strong>Sub-Code:</strong>SAZ6B
+            </p>
+            <a href="#SAZ6B" class="landing__card-content--link">Open &rarr;</a>
+          </div>
+        </div>
+        <div class="landing__card">
+          <h2 class="heading--secondary landing__card-heading">
+            Software Testing
+          </h2>
+          <div class="landing__card-content-box">
+            <p class="landing__card-content--text">
+              <strong>Sub-Code:</strong>SAZ6C
+            </p>
+            <a href="#SAZ6C" class="landing__card-content--link">Open &rarr;</a>
+          </div>
+        </div>
+        <div class="landing__card">
+          <h2 class="heading--secondary landing__card-heading">
+            Database Management System (DBMS)
+          </h2>
+          <div class="landing__card-content-box">
+            <p class="landing__card-content--text">
+              <strong>Sub-Code:</strong>SAZ5A
+            </p>
+            <a href="#SAZ5A" class="landing__card-content--link">Open &rarr;</a>
+          </div>
+        </div>
+        <div class="landing__card">
+          <h2 class="heading--secondary landing__card-heading">
+            Software Engineering (S.E)
+          </h2>
+          <div class="landing__card-content-box">
+            <p class="landing__card-content--text">
+              <strong>Sub-Code:</strong>SAZ5B
+            </p>
+            <a href="#SAZ5B" class="landing__card-content--link">Open &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="landing__footer footer">
+        Created by
+        <a href="https://adurhmn.github.io/cv/" class="landing__footer-link"
+          >@adurhmn</a
+        >
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
