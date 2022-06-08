@@ -329,14 +329,15 @@
             <ol>
               <li>
                 <p>
-                  Offline / a priori: Generation of Test Suites before executing
-                  it. A test suite is nothing but a collection of test cases.
+                  <span class="underline">Offline / a priori:</span> Generation
+                  of Test Suites before executing it. A test suite is nothing
+                  but a collection of test cases.
                 </p>
               </li>
               <li>
                 <p>
-                  Online / on-the-fly: Generation of Test Suites during test
-                  execution.
+                  <span class="underline">Online / on-the-fly:</span> Generation
+                  of Test Suites during test execution.
                 </p>
               </li>
             </ol>
@@ -385,6 +386,164 @@
               <li>Necessary Skills required in testers</li>
               <li>Deployment cost & effort will be more</li>
               <li>Difficult to understand the model itself</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">5.</span>
+            <span class="subject__question-text"
+              >Transaction Flow Testing.&nbsp;<span class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <h4>Get the transaction flows:</h4>
+            <ul>
+              <li>
+                <p>
+                  Complicated systems that process a lot of different,
+                  complicated transactions should have explicit representations
+                  of the transactions flows, or the equivalent.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Transaction flows are like control flow graphs, and
+                  consequently we should expect to have them in increasing
+                  levels of detail.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The system's design documentation should contain an overview
+                  section that details the main transaction flows.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Detailed transaction flows are a mandatory prerequisite to the
+                  rational design of a system's functional testing.
+                </p>
+              </li>
+            </ul>
+            <p>
+              Transaction flow is sequence of steps for a system to be tested.
+              The transaction flow begins at the preliminary design and
+              continues as the project progresses. The following testing
+              strategies has been taken.
+            </p>
+            <h4>Inspections, Reviews and Walkthroughs:</h4>
+            <ul>
+              <li>
+                <p>
+                  Discuss enough transaction types to account for 98%-99% of the
+                  transaction the system is expected to process.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Discuss paths through flows in functional rather than
+                  technical terms.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Ask the designers to relate every flow to the specification
+                  and to show how that transaction, directly or indirectly,
+                  follows from the requirements.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Make transaction flow testing the cornerstone of system
+                  functional testing just as path testing is the cornerstone of
+                  unit testing.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Select additional flow paths for loops, extreme values, and
+                  domain boundaries.
+                </p>
+              </li>
+              <li>
+                <p>Design more test cases to validate all births and deaths.</p>
+              </li>
+              <li>
+                <p>
+                  Publish and distribute the selected test paths through the
+                  transaction flows as early as possible so that they will exert
+                  the maximum beneficial effect on the project.
+                </p>
+              </li>
+            </ul>
+            <h4>Path Selection:</h4>
+            <ul>
+              <li>
+                <p>
+                  Select a set of covering paths (c1+c2) using the analogous
+                  criteria that were used for structural path testing.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Select a covering set of paths based on functionally sensible
+                  transactions, as you would for control flow graphs.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Try to find the most tortuous, longest, strangest path from
+                  the entry to the exit of the transaction flow.
+                </p>
+              </li>
+            </ul>
+            <h4>Path Sensitization:</h4>
+            <ul>
+              <li>
+                <p>
+                  Most of the normal paths are very easy to sensitize-80% - 95%
+                  transaction flow coverage (c1+c2) is usually easy to achieve.
+                </p>
+              </li>
+              <li>
+                <p>The remaining small percentage is often very difficult.</p>
+              </li>
+              <li>
+                <p>
+                  Sensitization is the act of defining the transaction. If there
+                  are sensitization problems on the easy paths, then bet on
+                  either a bug in transaction flows or a design bug.
+                </p>
+              </li>
+            </ul>
+            <h4>Path Instrumentation</h4>
+            <ul>
+              <li>
+                <p>
+                  Instrumentation plays a bigger role in transaction flow
+                  testing than in unit path testing.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The information of the path taken for a given transaction must
+                  be kept with that transaction and can be recorded by a central
+                  transaction dispatcher or by the individual processing
+                  modules.
+                </p>
+              </li>
+              <li>
+                <p>
+                  In some systems, such traces are provided by the operating
+                  systems or a running log.
+                </p>
+              </li>
             </ul>
           </div>
         </div>
