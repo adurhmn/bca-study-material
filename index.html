@@ -324,14 +324,15 @@
               system responds as per the expectation. It is a lightweight formal
               method to validate a system.
             </p>
+            <img src="./assets/img/saz6c_modelBasedTesting.jpg" alt="" />
+
             <h4>Types of MBT</h4>
             <p>There are two types of Model based testing framework:</p>
             <ol>
               <li>
                 <p>
                   <span class="underline">Offline / a priori:</span> Generation
-                  of Test Suites before executing it. A test suite is nothing
-                  but a collection of test cases.
+                  of Test Suites before executing it.
                 </p>
               </li>
               <li>
@@ -402,7 +403,7 @@
           </h3>
 
           <div class="subject__answer-content">
-            <h4 class="subject__sub-heading">
+            <!-- <h4 class="subject__sub-heading">
               <span>Ⅰ.</span>
               <span>Transaction Flow - Introduction</span>
             </h4>
@@ -445,13 +446,6 @@
               A transaction for an online information retrieval system might
               consist of the following steps or tasks:
             </p>
-            <!-- <p>
-              Accept input -> Validate input -> Transmit acknowledgement to
-              requester -> Do input processing -> Search file -> Request
-              directions from user -> Accept input -> Validate input -> Process
-              request -> Update file -> Transmit output -> Record transaction in
-              log and clean up
-            </p> -->
             <ul>
               <li><p>Accept input (tentative birth)</p></li>
               <li><p>Validate input (birth)</p></li>
@@ -469,7 +463,7 @@
             <h4 class="subject__sub-heading">
               <span>ⅠⅠ.</span>
               <span>Transaction Flow - Techniques / Strategies</span>
-            </h4>
+            </h4> -->
             <h4>Get the transaction flows:</h4>
             <ul>
               <li>
@@ -614,6 +608,375 @@
                 <p>
                   In some systems, such traces are provided by the operating
                   systems or a running log.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">6.</span>
+            <span class="subject__question-text"
+              >Data Flow Testing Strategies&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              Data-flow testing is a white box testing technique that can be
+              used to detect improper use of data values due to coding errors
+            </p>
+            <p>
+              The primary purpose of dynamic data-flow testing is to uncover
+              possible bugs in data usage during the execution of the code. To
+              achieve this, test cases are created which trace every definition
+              to each of its use and every use is traced to each of its
+              definition. Various strategies are employed for the creation of
+              the test cases.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>1.</span>
+              <span>All - du Paths (ADUP):</span>
+            </h4>
+            <p>
+              The all-du-paths (ADUP) strategy is that every du path from every
+              definition of every variable to every use of that definition be
+              exercised under some test.
+            </p>
+            <p>
+              This strategy is the strongest data-flow testing strategy since it
+              is a superset of all other data flow testing strategies. Moreover,
+              this strategy requires greatest number of paths for testing.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>2.</span>
+              <span>All Uses Startegy (AU):</span>
+            </h4>
+            <p>
+              The all uses (AU) strategy is that at least one definition clear
+              path from every definition of every variable to every use of that
+              definition be exercised under some test.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>3.</span>
+              <span>All p-uses/some c-uses strategy (APU+C) :</span>
+            </h4>
+            <p>
+              For every variable and every definition of that variable, include
+              at least one definition free path from the definition to every
+              predicate use; if there are definitions of the variable that are
+              not covered, then add computational use test cases as required to
+              cover every definition
+            </p>
+            <p>
+              In this testing strategy, for every variable, there is a path from
+              every definition to every p-use of that definition. If there is a
+              definition with no p-use following it, then a c-use of the
+              definition is considered.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>4.</span>
+              <span>All c-uses/some p-uses strategy (ACU+P) :</span>
+            </h4>
+            <p>
+              For every variable and every definition of that variable, include
+              at least one definition free path from the definition to every
+              computational use; if there are definitions of the variable that
+              are not covered, then add predicate use test cases as required to
+              cover every definition
+            </p>
+            <p>
+              In this testing strategy, for every variable, there is a path from
+              every definition to every c-use of that definition. If there is a
+              definition with no c-use following it, then a p-use of the
+              definition is considered.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>5.</span>
+              <span>All Definitions Strategy (AD) :</span>
+            </h4>
+            <p>
+              The all definitions strategy asks that every definition of every
+              variable be covered by at least one use of that variable, be that
+              use a computational use or a predicate use.
+            </p>
+            <p>
+              In this strategy, there is path from every definition to at least
+              one use of that definition.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>6.</span>
+              <span>All Predicate Uses (APU) Strategy :</span>
+            </h4>
+            <p>
+              The all predicate uses (APU) strategy is derived from APU+C
+              strategy by dropping the requirement of including a c-use if there
+              are no p-use instances following the definition.
+            </p>
+            <p>
+              In this testing strategy, for every variable, there is path from
+              every definition to every p-use of that definition. If there is a
+              definition with no p-use following it, then it is dropped from
+              contention.
+            </p>
+            <h4 class="subject__sub-heading">
+              <span>7.</span>
+              <span>All Computational Uses (ACU) Strategy :</span>
+            </h4>
+            <p>
+              The all computational uses (ACU) strategy is derived from ACU+P
+              strategy by dropping the requirement of including a p-use if there
+              are no c-use instances following the definition.
+            </p>
+            <p>
+              In this testing strategy, for every variable, there is a path from
+              every definition to every c-use of that definition. If there is a
+              definition with no c-use following it, then it is dropped from
+              contention.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">7.</span>
+            <span class="subject__question-text"
+              >Path Product&nbsp;<span class="subject__mark-flag"
+                >[5 Mark] [10 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              In tracing a path or path segment through a flow graph, you
+              traverse a succession of link names. The name of the path or path
+              segment that corresponds to those links is expressed naturally by
+              concatenating those link names. For example, if you traverse links
+              a, b, c and d along some path, the name for that path segment is
+              abcd. This path name is also called a
+              <span class="underline">Path Product</span>. The below images
+              contains more examples.
+            </p>
+            <img src="./assets/img/saz6c_pathProduct1.jpg" alt="" />
+            <!-- <br /> -->
+            <img src="./assets/img/saz6c_pathProduct2.jpg" alt="" />
+            <h4>Rules of path products:</h4>
+            <ul>
+              <li>
+                <p>
+                  The name of a path that consists of two successive path
+                  segments is conveniently expressed by the concatenation or
+                  Path Product of the segment names.
+                </p>
+                <p>
+                  For example, if X and Y are defined as X = abcde, Y = fghij,
+                  then the path corresponding to X followed by Y is denoted by
+                  XY = abcdefghij. Similarly, YX = fghijabcde, aX = aabcde, Xa =
+                  abcdea, XaX = abcdeaabcde
+                </p>
+              </li>
+              <li>
+                <p>
+                  If X and Y represent sets of paths or path expressions, their
+                  product represents the set of paths that can be obtained by
+                  following every element of X by any element of Y in all
+                  possible ways.
+                </p>
+                <p>
+                  For example, if X and Y are defined as X = abc + def + ghi, Y
+                  = uvw + z. Then XY = abcuvw + defuvw + ghiuvw + abcz + defz +
+                  ghiz
+                </p>
+              </li>
+              <li>
+                <p>
+                  If a link or segment name is repeated, that fact is denoted by
+                  an exponent. The exponent's value denotes the number of
+                  repetitions:
+                </p>
+                <p>
+                  a<sup>1</sup> = a, a<sup>2</sup> = aa, a<sup>3</sup> = aaa,
+                  a<sup>n</sup> = aaaa . . . n times.
+                </p>
+                <p>Similarly, if X = abcde then</p>
+                <p>
+                  X<sup>1</sup> = abcde, x<sup>2</sup> = abcdeabcde =
+                  (abcde)<sup>2</sup>, x<sup>3</sup> = abcdeabcdeabcde =
+                  (abcde)<sup>3</sup>
+                </p>
+              </li>
+              <li>
+                <p>The path product is not commutative</p>
+                <p>i.e: XY != YX</p>
+              </li>
+              <li>
+                <p>The path product is associative</p>
+                <p>i.e: A(BC) = (AB)C = ABC</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">8.</span>
+            <span class="subject__question-text"
+              >Path Instrumentation&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <ul>
+              <li>
+                <p>
+                  Path instrumentation is what we have to do to confirm that the
+                  outcome was achieved by the intended path.
+                </p>
+                <img src="./assets/img/saz6c_pathProduct2.jpg" alt="" />
+              </li>
+              <li>
+                <p>
+                  The above figure is an example of a routine that, for the
+                  (unfortunately) chosen input value (X = 16), yields the same
+                  outcome (Y = 2) no matter which case we select. Therefore, the
+                  tests chosen this way will not tell us whether we have
+                  achieved coverage. For example, the five cases could be
+                  totally jumbled and still the outcome would be the same. Path
+                  Instrumentation is what we have to do to confirm that the
+                  outcome was achieved by the intended path.
+                </p>
+              </li>
+            </ul>
+            <h4>Types of Path Instrumentation</h4>
+            <ul>
+              <li>
+                <h4>Interpretive Trace Program:</h4>
+                <p>
+                  An interpretive trace program is one that executes every
+                  statement in order and records the intermediate values of all
+                  calculations, the statement labels traversed etc.
+                </p>
+                <p>
+                  If we run the tested routine under a trace, then we have all
+                  the information we need to confirm the outcome and,
+                  furthermore, to confirm that it was achieved by the intended
+                  path.
+                </p>
+              </li>
+              <li>
+                <h4>Link Marker or Traversal Marker</h4>
+                <p>
+                  Name every link by a lower case letter. Instrument the links
+                  so that the link's name is recorded when the link is executed.
+                  The succession of letters produced in going from the routine's
+                  entry to its exit should exactly correspond to the path name.
+                </p>
+              </li>
+              <li>
+                <h4>Link Counter:</h4>
+                <p>
+                  Instead of a unique link name to be pushed into a string when
+                  the link is traversed, we simply increment a link counter. We
+                  now confirm that the path length is as expected.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">9.</span>
+            <span class="subject__question-text"
+              >Path Expression&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <ul>
+              <li>
+                <p>
+                  Consider a pair of nodes in a graph and the set of paths
+                  between those nodes.
+                </p>
+                <img src="./assets/img/saz6c_pathProduct2.jpg" alt="" />
+              </li>
+              <li>
+                <p>
+                  From the above figure, the members of the path set can be
+                  listed as follows:
+                </p>
+                <ul>
+                  abd, abcbd, abcbcbd, abcbcbcbd, ...........
+                </ul>
+              </li>
+              <li>
+                <p>Alternatively, the same set of paths can be denoted by :</p>
+                <ul>
+                  abd + abcbd + abcbcbd + abcbcbcbd, ...........
+                </ul>
+              </li>
+              <li>
+                <p>
+                  The + sign represents "OR" between the two nodes of interest.
+                  It means that either one of the paths can be taken.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Any expression that consists of path names and "OR"s and which
+                  denotes a set of paths between two nodes is called a "Path
+                  Expression".
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">10.</span>
+            <span class="subject__question-text"
+              >Path Sum&nbsp;<span class="subject__mark-flag"
+                >[5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <ul>
+              <li>
+                <p>The "Path Sum" denotes paths in parallel between nodes.</p>
+                <img src="./assets/img/saz6c_pathProduct1.jpg" alt="" />
+              </li>
+              <li>
+                <p>
+                  In the above figure, links a, b and c, d are parallel paths
+                  and are denoted by a + b and c + d respectively. The set of
+                  all paths between nodes 1 and 2 can be thought of as a set of
+                  parallel paths and denoted by eacf + eadf + ebcf + ebdf.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If a and b are sets of paths that lie between the same pair of
+                  nodes, then (a + b) denotes the UNION of those set of paths.
+                  Therefore, in the above flowgraph, the set of all paths is e(a
+                  + b)(c + d)f.
                 </p>
               </li>
             </ul>
