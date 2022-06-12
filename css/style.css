@@ -6,7 +6,8 @@
 
 body {
   position: relative;
-  padding-bottom: 10rem;
+  padding-bottom: 9rem;
+  min-height: 100vh;
 }
 
 a {
