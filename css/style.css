@@ -107,6 +107,7 @@ body {
   right: 1rem;
   background-color: black;
   z-index: 100;
+  cursor: pointer;
 }
 .nav__top::after {
   content: "";

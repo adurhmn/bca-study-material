@@ -184,15 +184,15 @@
 
           <div class="subject__answer-content">
             <p>
-              A software bug is a problem causing a program to crash or produce
-              invalid output. The problem is caused by insufficient or erroneous
-              logic. A bug can be an error, mistake, defect, or fault, which may
-              cause failure or deviation from expected results.
+              •&nbsp;A software bug is a problem causing a program to crash or
+              produce invalid output. The problem is caused by insufficient or
+              erroneous logic. A bug can be an error, mistake, defect, or fault,
+              which may cause failure or deviation from expected results.
             </p>
             <p>
-              Software bugs should be caught during the testing phase of the
-              software development life cycle, but some can go undetected until
-              after deployment.
+              •&nbsp;Software bugs should be caught during the testing phase of
+              the software development life cycle, but some can go undetected
+              until after deployment.
             </p>
             <h4>Types of bugs:</h4>
             <ol>
@@ -305,24 +305,25 @@
 
           <div class="subject__answer-content">
             <p>
-              Model-based testing is a software testing technique in which the
-              test cases are derived from a model that describes the functional
-              aspects of the system under test. It makes use of a model to
-              generate tests that includes both offline and online testing.
-              Model based testing is the modern approach to software testing.
+              •&nbsp;Model-based testing is a software testing technique in
+              which the test cases are derived from a model that describes the
+              functional aspects of the system under test. It makes use of a
+              model to generate tests that includes both offline and online
+              testing. Model based testing is the modern approach to software
+              testing.
             </p>
             <p>
-              A model is a description of a system’s behavior. Behavior can be
-              described in terms of input sequences, actions, conditions, output
-              and flow of data from input to output. It should be practically
-              understandable and can be reusable; shareable must have a precise
-              description of the system under test.
+              •&nbsp;A model is a description of a system’s behavior. Behavior
+              can be described in terms of input sequences, actions, conditions,
+              output and flow of data from input to output. It should be
+              practically understandable and can be reusable; shareable must
+              have a precise description of the system under test.
             </p>
             <p>
-              Model-Based Testing describes how a system behaves in response to
-              an action (determined by a model). Supply action, and see, if the
-              system responds as per the expectation. It is a lightweight formal
-              method to validate a system.
+              •&nbsp;Model-Based Testing describes how a system behaves in
+              response to an action (determined by a model). Supply action, and
+              see, if the system responds as per the expectation. It is a
+              lightweight formal method to validate a system.
             </p>
             <img src="./assets/img/saz6c_modelBasedTesting.jpg" alt="" />
 
@@ -628,16 +629,16 @@
 
           <div class="subject__answer-content">
             <p>
-              Data-flow testing is a white box testing technique that can be
-              used to detect improper use of data values due to coding errors
+              •&nbsp;Data-flow testing is a white box testing technique that can
+              be used to detect improper use of data values due to coding errors
             </p>
             <p>
-              The primary purpose of dynamic data-flow testing is to uncover
-              possible bugs in data usage during the execution of the code. To
-              achieve this, test cases are created which trace every definition
-              to each of its use and every use is traced to each of its
-              definition. Various strategies are employed for the creation of
-              the test cases.
+              •&nbsp;The primary purpose of dynamic data-flow testing is to
+              uncover possible bugs in data usage during the execution of the
+              code. To achieve this, test cases are created which trace every
+              definition to each of its use and every use is traced to each of
+              its definition. Various strategies are employed for the creation
+              of the test cases.
             </p>
             <h4 class="subject__sub-heading">
               <span>1.</span>
@@ -836,27 +837,21 @@
           </h3>
 
           <div class="subject__answer-content">
-            <ul>
-              <li>
-                <p>
-                  Path instrumentation is what we have to do to confirm that the
-                  outcome was achieved by the intended path.
-                </p>
-                <img src="./assets/img/saz6c_pathProduct2.jpg" alt="" />
-              </li>
-              <li>
-                <p>
-                  The above figure is an example of a routine that, for the
-                  (unfortunately) chosen input value (X = 16), yields the same
-                  outcome (Y = 2) no matter which case we select. Therefore, the
-                  tests chosen this way will not tell us whether we have
-                  achieved coverage. For example, the five cases could be
-                  totally jumbled and still the outcome would be the same. Path
-                  Instrumentation is what we have to do to confirm that the
-                  outcome was achieved by the intended path.
-                </p>
-              </li>
-            </ul>
+            <p>
+              •&nbsp;Path instrumentation is what we have to do to confirm that
+              the outcome was achieved by the intended path.
+            </p>
+            <img src="./assets/img/saz6c_pathProduct2.jpg" alt="" />
+            <p>
+              •&nbsp;The above figure is an example of a routine that, for the
+              (unfortunately) chosen input value (X = 16), yields the same
+              outcome (Y = 2) no matter which case we select. Therefore, the
+              tests chosen this way will not tell us whether we have achieved
+              coverage. For example, the five cases could be totally jumbled and
+              still the outcome would be the same. Path Instrumentation is what
+              we have to do to confirm that the outcome was achieved by the
+              intended path.
+            </p>
             <h4>Types of Path Instrumentation</h4>
             <ul>
               <li>
@@ -906,43 +901,33 @@
           </h3>
 
           <div class="subject__answer-content">
+            <p>
+              •&nbsp;Consider a pair of nodes in a graph and the set of paths
+              between those nodes.
+            </p>
+            <img src="./assets/img/saz6c_pathProduct2.jpg" alt="" />
+            <p>
+              •&nbsp;From the above figure, the members of the path set can be
+              listed as follows:
+            </p>
             <ul>
-              <li>
-                <p>
-                  Consider a pair of nodes in a graph and the set of paths
-                  between those nodes.
-                </p>
-                <img src="./assets/img/saz6c_pathProduct2.jpg" alt="" />
-              </li>
-              <li>
-                <p>
-                  From the above figure, the members of the path set can be
-                  listed as follows:
-                </p>
-                <ul>
-                  abd, abcbd, abcbcbd, abcbcbcbd, ...........
-                </ul>
-              </li>
-              <li>
-                <p>Alternatively, the same set of paths can be denoted by :</p>
-                <ul>
-                  abd + abcbd + abcbcbd + abcbcbcbd, ...........
-                </ul>
-              </li>
-              <li>
-                <p>
-                  The + sign represents "OR" between the two nodes of interest.
-                  It means that either one of the paths can be taken.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Any expression that consists of path names and "OR"s and which
-                  denotes a set of paths between two nodes is called a "Path
-                  Expression".
-                </p>
-              </li>
+              abd, abcbd, abcbcbd, abcbcbcbd, ...........
             </ul>
+            <p>
+              •&nbsp;Alternatively, the same set of paths can be denoted by :
+            </p>
+            <ul>
+              abd + abcbd + abcbcbd + abcbcbcbd, ...........
+            </ul>
+            <p>
+              •&nbsp;The + sign represents "OR" between the two nodes of
+              interest. It means that either one of the paths can be taken.
+            </p>
+            <p>
+              •&nbsp;Any expression that consists of path names and "OR"s and
+              which denotes a set of paths between two nodes is called a "Path
+              Expression".
+            </p>
           </div>
         </div>
         <hr />
@@ -958,28 +943,81 @@
           </h3>
 
           <div class="subject__answer-content">
-            <ul>
-              <li>
-                <p>The "Path Sum" denotes paths in parallel between nodes.</p>
-                <img src="./assets/img/saz6c_pathProduct1.jpg" alt="" />
-              </li>
-              <li>
-                <p>
-                  In the above figure, links a, b and c, d are parallel paths
-                  and are denoted by a + b and c + d respectively. The set of
-                  all paths between nodes 1 and 2 can be thought of as a set of
-                  parallel paths and denoted by eacf + eadf + ebcf + ebdf.
-                </p>
-              </li>
-              <li>
-                <p>
-                  If a and b are sets of paths that lie between the same pair of
-                  nodes, then (a + b) denotes the UNION of those set of paths.
-                  Therefore, in the above flowgraph, the set of all paths is e(a
-                  + b)(c + d)f.
-                </p>
-              </li>
-            </ul>
+            <p>
+              •&nbsp;The "Path Sum" denotes paths in parallel between nodes.
+            </p>
+            <img src="./assets/img/saz6c_pathProduct1.jpg" alt="" />
+            <p>
+              •&nbsp;In the above figure, links a, b and c, d are parallel paths
+              and are denoted by a + b and c + d respectively. The set of all
+              paths between nodes 1 and 2 can be thought of as a set of parallel
+              paths and denoted by eacf + eadf + ebcf + ebdf.
+            </p>
+            <p>
+              •&nbsp;If a and b are sets of paths that lie between the same pair
+              of nodes, then (a + b) denotes the UNION of those set of paths.
+              Therefore, in the above flowgraph, the set of all paths is e(a +
+              b)(c + d)f.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">11.</span>
+            <span class="subject__question-text"
+              >Productivity and Quality in Software&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              •&nbsp;In production of consumer goods and other products, every
+              manufacturing stage is subjected to quality control and testing
+              from start to final stage. If flaws are discovered at any stage,
+              the product is either discarded or cycled back for rework and
+              correction.
+            </p>
+            <p>
+              •&nbsp;Productivity is measured by sum of the costs of the
+              material, rework, discarded components, quality assurance and
+              testing.
+            </p>
+            <p>
+              •&nbsp;There is a trade-off between quality assurance costs and
+              manufacturing costs: If sufficient time is not spent in quality
+              assurance, the reject rate will be high and so will be the net
+              cost. If inspection is good and all errors are caught as they
+              occur, inspection costs will dominate, and again the net cost will
+              suffer.
+            </p>
+            <p>
+              •&nbsp;Testing and Quality assurance costs for manufactured items
+              can be as low as 2% in consumer products or as high as 80% in
+              software products for space-ships, nuclear reactors, and
+              aircrafts, where failures threaten life.
+            </p>
+            <p>
+              •&nbsp;The biggest part of software cost is the cost of bugs: the
+              cost of detecting them, the cost of correcting them, the cost of
+              designing tests that discover them, and the cost of running those
+              tests.
+            </p>
+            <p>
+              •&nbsp;Testing and Test Design are parts of quality assurance and
+              should also focus on bug prevention. A prevented bug is better
+              than a detected and corrected bug.
+            </p>
+            <p>
+              •&nbsp; The main difference then between widget productivity and
+              software productivity is that for hardware, quality is only one of
+              several productivity determinants, whereas for software, quality
+              and productivity are almost indistinguishable.
+            </p>
           </div>
         </div>
         <hr />
