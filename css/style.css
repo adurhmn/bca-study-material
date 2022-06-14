@@ -66,6 +66,10 @@ body {
   text-decoration: underline;
 }
 
+.warning {
+  color: rgb(216, 25, 25);
+}
+
 .display-none {
   display: none !important;
 }

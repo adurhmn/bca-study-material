@@ -1543,7 +1543,7 @@
 
         <div class="subject__answer">
           <h3 class="heading--tertiary subject__question">
-            <span class="subject__question-no">1.</span>
+            <span class="subject__question-no">2.</span>
             <span class="subject__question-text"
               >Use-Case Model&nbsp;<span class="subject__mark-flag"
                 >[10 Mark]</span
@@ -1647,6 +1647,304 @@
               Validate User), three &lt;&lt;include&gt;&gt; dependencies, and
               the associations between the performing actors and the use cases.
             </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">3.</span>
+            <span class="subject__question-text"
+              >Object Oriented Design Process & Its Axioms&nbsp;<span
+                class="subject__mark-flag"
+                >(Unit 3) [10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <h4>Design Process</h4>
+            <p>
+              The object-oriented design process consists of following
+              activities:
+            </p>
+            <p>
+              1) Apply design axioms to design classes, their attributes,
+              methods, associations, structures & protocols.
+            </p>
+            <ul>
+              <li>
+                Refine and complete the static UML class diagram
+                <ul>
+                  <li>Refine attributes</li>
+                  <li>
+                    Design methods and protocols using UML activity diagram
+                  </li>
+                  <li>Refine the associations</li>
+                  <li>Refine class hierarchy and design with inheritance</li>
+                </ul>
+              </li>
+              <li>Iterate and refine</li>
+            </ul>
+            <p>2) Design the access layer</p>
+            <ul>
+              <li>
+                Create mirror classes for the access layer as business layer
+              </li>
+              <li>Identify access layer class relationship</li>
+              <li>
+                Simplify classes and their relationships
+                <ul>
+                  <li>Avoid redundant classes</li>
+                  <li>
+                    Design methods and protocols using UML activity diagram
+                  </li>
+                  <li>
+                    Delete classes that have only 1 or 2 methods. Try to add in
+                    other classes
+                  </li>
+                </ul>
+              </li>
+              <li>Iterate and refine</li>
+            </ul>
+            <p>3) Design the view layer</p>
+            <ul>
+              <li>
+                Design the macro level user interface - identifying view layer
+                objects.
+              </li>
+              <li>
+                Design the micro level user interface, which includes the
+                following activities
+                <ul>
+                  <li>
+                    Design the view layer objects by applying the design axioms
+                    and corollaries
+                  </li>
+                  <li>Build the prototype of the view layer</li>
+                </ul>
+              </li>
+              <li>Test usability and user satisfaction</li>
+              <li>Iterate and refine</li>
+            </ul>
+            <p>
+              4) Iterate and refine the whole design. Reapply the design axioms
+              and repeat the preceding steps.
+            </p>
+            <h4>Design Axioms</h4>
+            <p>
+              •&nbsp;Axiom is a fundamental truth that is always observed to be
+              valid and for which there is no counterexample or exception. They
+              cannot be proven or derived.
+            </p>
+            <p>•&nbsp;Suh's design axioms to OOD :</p>
+            <ol>
+              <li>
+                <p>
+                  <strong>Axiom 1: (The Independent Axiom)</strong><br />This
+                  Axiom maintains the independence of components. It states
+                  that, during the design process, as we go from requirement and
+                  use - case to a system component, each component must satisfy
+                  that requirement, without affecting other requirements
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Axiom 2: (The Information Axiom)</strong><br />
+                  This axiom is concerned with simplicity. The goal is to
+                  minimize the information content of the design. In
+                  object-oriented system, to minimize complexity use inheritance
+                  and the system's built in classes and add as little as
+                  possible to what already is there.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">4.</span>
+            <span class="subject__question-text"
+              >Designing View Layer Classes&nbsp;<span
+                class="subject__mark-flag"
+                >(Unit 3) [10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              The process of designing view layer classes is divided into four
+              major activities:
+            </p>
+            <ol>
+              <li>
+                Design the macro level user interface - identifying view layer
+                objects.
+              </li>
+              <li>
+                Design the micro level user interface, which includes the
+                following activities,
+                <ul>
+                  <li>
+                    Design the view layer objects by applying the design axioms
+                    and corollaries
+                  </li>
+                  <li>Build the prototype of the view layer</li>
+                </ul>
+              </li>
+              <li>Test usability and user satisfaction</li>
+              <li>Iterate and refine</li>
+            </ol>
+            <span class="warning"
+              >{If asked in 10 marks elaborate the first two steps with
+              questions 5 & 6}</span
+            >
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">5.</span>
+            <span class="subject__question-text"
+              >View Layer Macro Process&nbsp;<span class="subject__mark-flag"
+                >(Unit 3) [10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              •&nbsp;The main goal of this level is to identify classes that
+              interacts with human actors by analyzing the use cases developed
+              in the analysis phase.
+            </p>
+            <p>•&nbsp;The view layer macro process consists of two steps:</p>
+            <ol>
+              <li>
+                For every class identified, determine if the class interacts
+                with a human actor, If so perform the following, otherwise move
+                to the next class.
+                <ul>
+                  <li>
+                    Identify view (interface) objects for class. Zoom in on the
+                    view objects by utilizing sequence or collaboration diagrams
+                    to identify the interface objects, their responsibilities,
+                    and the requirements for this class.
+                  </li>
+                  <li>
+                    Define relationships among the view (interface) objects
+                  </li>
+                </ul>
+              </li>
+              <li>Iterate and refine</li>
+            </ol>
+            <img src="./assets/img/sez6c_viewLayerMacroProcess.jpg" alt="" />
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">6.</span>
+            <span class="subject__question-text"
+              >View Layer Micro Process&nbsp;<span class="subject__mark-flag"
+                >(Unit 3) [10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>•&nbsp;The view layer micro process consists of two steps:</p>
+            <ol>
+              <li>
+                For very interface object identified in macro UI design process,
+                apply micro-level UI design rules & corollaries to develop the
+                UI.
+              </li>
+              <li>Iterate and refine</li>
+            </ol>
+            <h4>UI Design Rule</h4>
+            <p>
+              <strong>Rule 1: </strong>
+              <span class="underline">Making the interface simple</span>. This
+              rule is an applicaion of corollary 2 (single purpose).
+            </p>
+            <p>
+              <strong>Rule 2: </strong
+              ><span class="underline"
+                >Making the interface Transparent and Natural</span
+              >. This rule is an applicaion of corollary 4.
+            </p>
+            <p>
+              <strong>Rule 3: </strong
+              ><span class="underline"
+                >Allowing the users to be in Control of the software</span
+              >. This rule is an applicaion of corollary 1. Some of the ways to
+              put users in control are,
+            </p>
+            <ul>
+              <li>Make the interface forgiving</li>
+              <li>Make the interface visual</li>
+              <li>Provide immediate feedback</li>
+              <li>Avoid modes</li>
+              <li>Make the interface consistent</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no">7.</span>
+            <span class="subject__question-text"
+              >Purpose of View Layer Interface&nbsp;<span
+                class="subject__mark-flag"
+                >(Unit 3) [10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+
+          <div class="subject__answer-content">
+            <p>
+              •&nbsp;View layer interface can also be called as User Interface
+              (UI)
+            </p>
+            <p>
+              •&nbsp;The main goal of UI is to display & obtain needed
+              information in an accessible, efficient manner. A well defined UI
+              has visual appeal that motivates users to use application.
+            </p>
+            <p>
+              •&nbsp;The user interface can employ one or more windows. Windows
+              are commonly used for the following purposes,
+            </p>
+            <ul>
+              <li>
+                <strong>Forms & data entry windows - </strong> provides an
+                interface that allows users to access, write, modify or delete
+                database data in the application.
+              </li>
+              <li>
+                <strong>Dialog Boxes - </strong> display status information or
+                ask users to supply information or make a decision before
+                continuing with a task. A typical feature of a dialog box is OK
+                button.
+              </li>
+              <li>
+                <strong>Command Buttons - </strong> provides the user a simple
+                way to trigger an event, like searching for a query at a search
+                engine.
+              </li>
+              <li>
+                <strong>Application windows (main windows) - </strong> is a
+                container of application objects or icons. In other words, it
+                contains an entire application with which users can interact.
+              </li>
+            </ul>
           </div>
         </div>
         <hr />
