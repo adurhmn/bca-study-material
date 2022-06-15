@@ -9,6 +9,8 @@ for (i = 0, n = subjects.length; i < n; i++) {
 
   for (j = 0, k = answers.length; j < k; j++) {
     answers[j].setAttribute("id", `${subjectName}-answer-${j + 1}`);
+    // writes question numbers for each answer
+    answers[j].querySelector(".subject__question-no").textContent = j + 1 + ".";
   }
 }
 
