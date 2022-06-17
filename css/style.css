@@ -70,6 +70,11 @@ body {
   color: rgb(216, 25, 25);
 }
 
+.warning a {
+  color: blue;
+  text-decoration: underline;
+}
+
 .display-none {
   display: none !important;
 }
