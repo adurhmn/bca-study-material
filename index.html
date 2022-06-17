@@ -166,6 +166,210 @@
             </ol>
           </div>
         </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no"></span>
+            <span class="subject__question-text"
+              >What is VBScript? Explain the salient features of
+              VBScript&nbsp;<span class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>
+              VBScript (Visual Basic Script) is developed by Microsoft with the
+              intention of developing dynamic web pages. It is client-side
+              scripting language like JavaScript. VBScript is a light version of
+              Microsoft Visual Basic. The syntax of VBScript is very similar to
+              that of Visual Basic. If you want your webpage to be more lively
+              and interactive, then you can incorporate VBScript in your
+              code.&nbsp;<span class="subject__mark-flag">[2 Mark]</span>
+            </p>
+            <h4>Features</h4>
+            <ul>
+              <li>
+                VBScript is a lightweight scripting language, which has a
+                lightning fast interpreter.
+              </li>
+              <li>
+                VBScript, for the most part, is case insensitive. It has a very
+                simple syntax, easy to learn and to implement.
+              </li>
+              <li>
+                Unlike C++ or Java, VBScript is an object-based scripting
+                language and NOT an Object-Oriented Programming language.
+              </li>
+              <li>
+                It uses Component Object Model (COM) in order to access the
+                elements of the environment in which it is executing.
+              </li>
+              <li>
+                Successful execution of VBScript can happen only if it is
+                executed in Host Environment such as Internet Explorer (IE),
+                Internet Information Services (IIS) and Windows Scripting Host
+                (WSH).
+              </li>
+              <li>
+                VBScript is also used for Network Administration, System
+                Administration and for UFT Test Automation.
+              </li>
+              <li>
+                If we already know Visual Basic (VB) or Visual Basic for
+                Applications (VBA), VBScript will be very familiar.
+              </li>
+              <li>
+                VBScript talks to host applications using Windows Script. With
+                Windows Script, browsers and other host applications do not
+                require special integration code for each scripting component.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="subject__answer">
+          <h3 class="heading--tertiary subject__question">
+            <span class="subject__question-no"></span>
+            <span class="subject__question-text"
+              >String Functions in VBScript&nbsp;<span
+                class="subject__mark-flag"
+                >[10 Mark] [5 Mark]</span
+              ></span
+            >
+          </h3>
+          <div class="subject__answer-content">
+            <p>
+              <strong>InStr: </strong>returns the first occurrence of the
+              specified substring. Search happens from left to right.
+            </p>
+            <ul>
+              <li>
+                <strong>Example: </strong><br />
+                <code>
+                  Dim txt <br />
+                  txt = "This is a beautiful day!" <br />
+                  MsgBox InStr(txt, "beautiful") <br />
+                </code>
+              </li>
+              <li>
+                <strong>Output:</strong><br />
+                11
+              </li>
+            </ul>
+            <p>
+              <strong>InStrRev: </strong>returns the first occurrence of the
+              specified substring. Search happens from Right to Left.
+            </p>
+            <ul>
+              <li>
+                <strong>Example: </strong><br />
+                <code>
+                  Dim txt <br />
+                  txt = "This is a beautiful day!" <br />
+                  MsgBox InStrRev(txt, "beautiful") <br />
+                </code>
+              </li>
+              <li>
+                <strong>Output:</strong><br />
+                11
+              </li>
+            </ul>
+            <p>
+              <strong>Left: </strong>returns a specified number of characters
+              from the left side of a string.
+            </p>
+            <ul>
+              <li>
+                <strong>Example: </strong><br />
+                <code>
+                  Dim txt <br />
+                  txt = "This is a beautiful day!" <br />
+                  MsgBox Left(txt, 15) <br />
+                </code>
+              </li>
+              <li>
+                <strong>Output:</strong><br />
+                This is a beaut
+              </li>
+            </ul>
+            <p>
+              <strong>Right: </strong>returns a specific number of characters
+              from the right side of the string.
+            </p>
+            <ul>
+              <li>
+                <strong>Example: </strong><br />
+                <code>
+                  Dim txt <br />
+                  txt = "This is a beautiful day!" <br />
+                  MsgBox Right(txt, 10) <br />
+                </code>
+              </li>
+              <li>
+                <strong>Output:</strong> <br />
+                tiful day!
+              </li>
+            </ul>
+            <p>
+              <strong>Split: </strong>returns a zero-based, one-dimensional
+              array that contains a specified number of substrings.
+            </p>
+            <ul>
+              <li>
+                <strong>Example: </strong><br />
+                <code>
+                  Dim txt, splitText <br />
+                  txt = "This is a beautiful day!" <br />
+                  splitText = Split(txt) <br />
+                  For each x in txt <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;MsgBox x <br />
+                </code>
+              </li>
+              <li>
+                <strong>Output:</strong> <br />
+                This <br />
+                is <br />
+                a <br />
+                beautiful <br />
+                day! <br />
+              </li>
+            </ul>
+            <p>
+              <strong>Join: </strong>returns a string that consists of a number
+              of substrings in an array.
+            </p>
+            <ul>
+              <li>
+                <strong>Example:</strong><br />
+                <code>
+                  Dim days <br />
+                  days = Array("Life", "Is", "Good") <br />
+                  MsgBox Join(days) <br />
+                </code>
+              </li>
+              <li>
+                <strong>Output:</strong> <br />
+                Life Is Good
+              </li>
+            </ul>
+            <p>
+              <strong>LCase: </strong>returns the lower case of the specified
+              string.
+            </p>
+            <p>
+              <strong>UCase: </strong>returns the upper case of the specified
+              string.
+            </p>
+            <p>
+              <strong>Trim: </strong>returns the string value after removing
+              both leading and trailing blank spaces.
+            </p>
+          </div>
+        </div>
+        <hr />
       </div>
     </section>
 
